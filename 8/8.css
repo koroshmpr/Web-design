@@ -1,0 +1,125 @@
+@import url(../Font/css/all.css);
+@import url(../Font/Font-face.css);
+
+.h0 {
+   width: 500px;
+   /* height: 100px; */
+   font-size: 100px;
+   background-color: rgb(184, 252, 252);
+   box-shadow: 0px 10px 20px 0px black;
+   border-radius: 10px;
+   margin-bottom: 0px;
+ 
+}
+body {
+    background-color: teal
+    ;
+
+}
+p {
+   padding: 10px;
+    background-color: white;
+    direction: rtl;
+    font-size: 25px;
+    border-radius: 20px;
+    width: 75%;
+    box-shadow: 0px 10px 20px 0px black;
+    font-family: "vazir";
+    text-align: center;
+}
+h1 {
+    background-color: rgb(184, 252, 252);
+    border-radius: 20px;
+    box-shadow: 0px 5px 10px 0px black;
+    width: 80%;
+}
+#code {
+    color: red ;
+    font-size: 15px;
+    box-shadow: 0px 10px 30px 0px black;
+}
+.home {
+    position :fixed ;
+    left: 5px;
+    top: 20px;
+    box-shadow : 4px 7px 10px 0px rgb(54, 54, 54);
+    color: hsl(0, 0%, 0%);
+ 
+ padding : 10px 12px 10px 9px;
+ background-color: rgb(184, 252, 252);
+border-radius: 50px;
+
+ height: 50px;
+ width: 50px;
+ /* font-size: 30px; */
+}
+.home:hover {
+    background-color: rgb(20, 247, 247) ;
+}
+.home:active {
+    background-color: rgb(158, 158, 158);
+}
+.pp{
+    
+    position :fixed ;
+    left: 80px;
+    top: 20px;
+    box-shadow : 4px 7px 10px 0px rgb(54, 54, 54);
+    color: hsl(0, 0%, 0%);
+ 
+padding: 10px;
+ background-color: rgb(184, 252, 252);
+border-radius: 50px;
+ height: 50px;
+ width: 50px;
+ font-size: 25px;
+}
+.pp:hover {
+    background-color: rgb(20, 247, 247) ;
+}
+.pp:active {
+    background-color: rgb(158, 158, 158);
+}
+.np{
+    
+    position :fixed ;
+    left: 155px;
+    top: 20px;
+    box-shadow : 4px 7px 10px 0px rgb(54, 54, 54);
+    color: hsl(0, 0%, 0%);
+ 
+padding: 10px;
+ background-color: rgb(184, 252, 252);
+border-radius: 50px;
+ height: 50px;
+ width: 50px;
+
+}
+.np:hover {
+    background-color: rgb(20, 247, 247) ;
+}
+.np:active {
+    background-color: rgb(158, 158, 158);
+}
+.h1 {
+  background-color: crimson;
+  width: 20%;
+}
+.h2 {
+    width: 40%;
+}
+.h3 {
+    width: 60%;
+}
+.h4 {
+    width: 80%;
+}
+.h7 {
+    width: 95%;
+}
+.h6 {
+    width: 90%;
+}
+.h5 {
+    width: 85%;
+}

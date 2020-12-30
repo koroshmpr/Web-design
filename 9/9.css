@@ -1,0 +1,122 @@
+@import url(../Font/Font-face.css);
+@import url(../Font/css/all.css);
+body {
+    margin-top: 300px;
+    font-family: "tahriri";
+    background-color:rgb(105, 66, 8) ;
+   
+
+}
+.main {
+    /* box-shadow: 0px 10px 20px 0px black; */
+    height: 1500px;
+    width: 800px;
+    background-color: transparent;
+    text-align: center;
+    margin: auto;
+    border-radius: 40px;
+   
+    direction: rtl;
+   
+   
+}
+.mes {
+    font-size: 2em;
+    cursor: context-menu;
+    color: rgb(209, 209, 209);
+}
+.mes:hover {
+    color: black;
+}
+h1 {
+    
+    cursor: pointer;
+    font-size: 2.5em;
+    color: rgb(161, 56, 7);
+   
+ margin: auto;
+ border-top-left-radius: 30px;
+ border-top-right-radius: 30px;
+    
+}
+hr {
+    width: 90%;
+}
+.hafez {
+ 
+    font-size: 50px;
+    text-align: center;
+   color: black;
+   text-decoration: none;
+}
+.hafez:hover {
+    color: brown;
+}
+h1:hover {
+
+    color: rgb(185, 113, 30);
+}
+
+.home {
+    position :fixed ;
+    left: 5px;
+    top: 20px;
+    box-shadow : 4px 7px 10px 0px rgb(54, 54, 54);
+    color: hsl(0, 0%, 0%);
+ 
+ padding : 10px 12px 10px 9px;
+ background-color: rgb(187, 98, 15);
+border-radius: 50px;
+
+ height: 50px;
+ width: 50px;
+ /* font-size: 30px; */
+}
+.home:hover {
+    background-color: rgb(255, 177, 104) ;
+}
+.home:active {
+    background-color: rgb(158, 158, 158);
+}
+.pp{
+    
+    position :fixed ;
+    left: 5px;
+    top: 100px;
+    box-shadow : 4px 7px 10px 0px rgb(54, 54, 54);
+    color: hsl(0, 0%, 0%);
+ 
+padding: 10px;
+ background-color: rgb(187, 98, 15);
+border-radius: 50px;
+ height: 50px;
+ width: 50px;
+ font-size: 25px;
+}
+.pp:hover {
+    background-color: rgb(255, 177, 104) ;
+}
+.pp:active {
+    background-color: rgb(158, 158, 158);
+}
+.np{
+    
+    position :fixed ;
+    left: 5px;
+    top: 180px;
+    box-shadow : 4px 7px 10px 0px rgb(54, 54, 54);
+    color: hsl(0, 0%, 0%);
+ 
+padding: 10px;
+ background-color:  rgb(187, 98, 15);
+border-radius: 50px;
+ height: 50px;
+ width: 50px;
+
+}
+.np:hover {
+    background-color: rgb(255, 177, 104) ;
+}
+.np:active {
+    background-color: rgb(158, 158, 158);
+}

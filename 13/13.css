@@ -1,0 +1,258 @@
+@import url(../Font/css/all.css);
+:root {
+    background-color: goldenrod;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    transition: 1s;
+}
+@keyframes turn {
+    0% {
+    }
+    100% {
+        transform: rotate(360deg) ;
+    }
+    
+}
+
+.box1 {
+    width: 150px;
+    height: 150px;
+    background-color: royalblue;
+    margin: 0px 2px;
+    order:2;
+    font-size: 8em;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px 0px black;
+    animation-name: turn;
+    animation-delay: 3s;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-iteration-count: 2;
+}
+.box2 {
+    width: 150px;
+    height: 150px;
+    background-color: royalblue;
+    margin: 0px 2px;
+    order:3;
+    font-size: 8em;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px 0px black;
+    animation-name: turn;
+    animation-delay: 6s;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+.box3 {
+    width: 150px;
+    height: 150px;
+    background-color: royalblue;
+    margin: 0px 2px;
+    order:1;
+    font-size: 8em;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px 0px black;
+    animation-name: turn;
+    animation-timing-function: ease;
+    animation-duration: 3s;
+    animation-iteration-count: 3;
+}
+@media all and (min-width:961px) and (max-width: 1280px) {
+   .container {
+        display: flex;
+        flex-direction: column;
+        font-size: 0.9em;
+    }
+    .box1  {
+        align-self: center;
+    }
+   .box1 , .box2 , .box3 {
+       background-color: red;
+    }
+   .home {
+        transform: scale(0.8);
+    }
+    .pp {
+         transform: scale(0.8);
+    }
+    .np {
+        transform: scale(0.8);
+    }
+    .pp:active {
+        transform: scale(0.8) translateX(-50px);
+    }
+    .home:active {
+        transform: scale(0.8) translateX(-50px)
+    }
+    .np:active {
+        transform: scale(0.8) translateX(-50px)
+    }
+}
+@media all and (min-width:601px) and (max-width: 960px) {
+    .container {
+      justify-content: space-evenly;
+        align-content: space-around;
+        width: 400px;
+        height: 470px;
+        font-size: 0.8em;
+        
+    }
+    .box1 , .box2 , .box3 {
+        background-color: turquoise;
+    }
+    .home {
+    transform: scale(0.6);
+    }
+    .np {
+        transform: scale(0.6);
+        }
+    .pp {
+    transform: scale(0.6);
+    }
+    .pp:active {
+    transform: scale(0.6) translateX(-50px);
+    }
+    .home:active {
+    transform: scale(0.6) translateX(-50px);
+    }
+    .np:active {
+        transform: scale(0.6) translateX(-50px);
+    }
+}
+@media all and (max-width: 600px) {
+    .container {
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+        width: 200px;
+        font-size: 0.7em;
+    }
+    .box1 {
+        margin: 20px 0px;
+    }
+    .box1 , .box2 , .box3 {
+        background-color: palegreen;
+    }
+    .home {
+        transform: scale(0.6);
+    }
+    .np {
+        transform: scale(0.6);
+    }
+    .pp {
+        transform: scale(0.6);
+    }
+    .pp:active {
+        transform: scale(0.6) translateX(-50px);
+    }
+    .np:active {
+        transform: scale(0.6) translateX(-50px);
+    }
+    .home:active {
+        transform: scale(0.6) translateX(-50px)
+    }
+}
+.home {
+    position :fixed ;
+    left: -80px;
+    top: 20px;
+    box-shadow : 4px 10px 10px 0px rgb(54, 54, 54);
+    color: hsl(0, 0%, 0%);
+    padding : 10px 5px 10px 20px;
+    background-color: rgb(97, 248, 253);
+    border-radius: 20px;
+    height: 50px;
+    width: 110px;
+    transition: 1s;
+
+}
+.home:hover {
+    background-color: rgb(255, 177, 104) ;
+    width: 100px;
+    height: 55px;
+    font-size: 17px;
+    margin-left: 70px;
+}
+.home:active {
+    
+    background-color: teal;
+    width: 130px;
+    height: 35px;
+    font-size: 12px;
+    padding-left: 100px;
+    color: khaki;
+}
+.pp{
+    
+    position :fixed ;
+    left: -80px;
+    top: 100px;
+    box-shadow : 4px 7px 10px 0px rgb(54, 54, 54);
+    color: hsl(0, 0%, 0%);
+    padding : 10px 0px 10px 30px;
+    background-color: rgb(97, 248, 253);
+    border-radius: 20px;
+    height: 50px;
+    width: 110px;
+    font-size: 25px;
+    transition: 1s;
+}
+.pp:hover {
+    background-color: rgb(255, 177, 104) ;
+    width: 110px;
+    height: 55px;
+    font-size: 30px;
+    margin-left: 70px;
+}
+.pp:active {
+    background-color: teal;
+    width: 130px;
+    height: 35px;
+    font-size: 20px;
+    padding-left: 100px;
+    color: khaki;
+}
+.np {
+    position :fixed ;
+    left: -80px;
+    top: 180px;
+    box-shadow : 4px 10px 10px 0px rgb(54, 54, 54);
+    color: hsl(0, 0%, 0%);
+    padding : 10px 5px 10px 20px;
+    background-color: rgb(97, 248, 253);
+    border-radius: 20px;
+    height: 50px;
+    width: 110px;
+    transition: 1s;
+
+}
+.np:hover {
+    background-color: rgb(255, 177, 104) ;
+    width: 100px;
+    height: 55px;
+    font-size: 17px;
+    margin-left: 70px;
+}
+.np:active {
+    
+    background-color: teal;
+    width: 130px;
+    height: 35px;
+    font-size: 12px;
+    padding-left: 100px;
+    color: khaki;
+}
+

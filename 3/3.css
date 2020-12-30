@@ -1,0 +1,128 @@
+                @import url(../Font/css/all.css);
+               
+               body {
+                   margin-bottom: 100px;
+               }
+               h1 {
+                    color:rgb(199, 80, 129);
+                    background-color: rgb(250, 225, 225);
+                }
+                a {
+                    color:rgb(102, 139, 252);
+                }
+                html {
+                    background-color:rgb(247, 177, 177);
+                }
+                h2 {
+                    color:rgb(24, 189, 189);
+                    background-color: rgb(6, 83, 80);
+                }
+                p {
+                    color:rgb(4, 83, 122);
+                }
+                
+                .img {
+                    border-radius: 30px;
+                    width: 50px;
+                    height: 50px;
+                }
+                .top {
+                    
+                    position :fixed ;
+                    right: 0px;
+                    bottom: 20px;
+                    box-shadow : 4px 7px 10px 0px rgb(54, 54, 54);
+                    color: hsl(0, 5%, 99%);
+                 
+                 padding: 10px 18px 0px 12px;
+                 background-color: rgb(0, 0, 0);
+                 border-bottom-left-radius: 20px;
+                 border-top-left-radius: 20px;
+                
+                 height: 50px;
+                 width: 40px;
+                 font-size: 40px;
+                }
+                .top:hover {
+                    color: rgb(203, 250, 110);
+                }
+                .top:active {
+                    color: red;
+                }
+               
+                .sticky {
+                    position: sticky;
+                    top: 10px;
+                    background-color: rgb(247, 201, 201);
+                    border-radius: 200px;
+                    border: 5px solid pink;
+                    
+                    font-size: 40px;
+                    color: rgb(255, 255, 255);
+                }
+                .home {
+                    position :fixed ;
+                    right: 0px;
+                    top: 20px;
+                    box-shadow : 4px 7px 10px 0px rgb(54, 54, 54);
+                    color: hsl(0, 5%, 99%);
+                 
+                 padding: 10px 18px 0px 12px;
+                 background-color: rgb(0, 0, 0);
+                 border-bottom-left-radius: 20px;
+                 border-top-left-radius: 20px;
+                
+                 height: 50px;
+                 width: 40px;
+                 font-size: 40px;
+                }
+                .home:hover {
+                    color: rgb(203, 250, 110);
+                }
+                .home:active {
+                    color: red;
+                }
+                .pp{
+                    
+                    position :fixed ;
+                    right: 0px;
+                    top: 90px;
+                    box-shadow : 4px 7px 10px 0px rgb(54, 54, 54);
+                    color: hsl(0, 5%, 99%);
+                 
+                 padding: 10px 0px 0px 10px;
+                 background-color: rgb(0, 0, 0);
+                 border-bottom-left-radius: 20px;
+                 border-top-left-radius: 20px;
+                
+                 height: 50px;
+                 width: 60px;
+                }
+                .pp:hover {
+                    color: rgb(203, 250, 110);
+                }
+                .pp:active {
+                    color: red;
+                }
+                .np {
+                
+                    position :fixed ;
+                    right: 0px;
+                    top: 160px;
+                    box-shadow : 4px 7px 10px 0px rgb(54, 54, 54);
+                    color: hsl(0, 5%, 99%);
+                 
+                 padding: 10px 0px 0px 10px;
+                 background-color: rgb(0, 0, 0);
+                 border-bottom-left-radius: 20px;
+                 border-top-left-radius: 20px;
+                
+                 height: 50px;
+                 width: 60px;
+                }
+                .np:hover {
+                    color: rgb(203, 250, 110);
+                }
+                .np:active {
+                    color: red;
+                }

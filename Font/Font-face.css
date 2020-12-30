@@ -1,0 +1,14 @@
+@font-face {
+    font-family: "vazir" ;
+    src:    url(Vazir.woff2) format("woff2"),
+            url(Vazir.woff)   format("woff");
+
+}
+@font-face {
+    font-family: "tahriri" ;
+    src:   url(Shekasteh.ttf) format("truetype");
+}
+@font-face {
+    font-family: "naskh";
+    src: url(IranNastaliq.ttf) format("truetype");
+}
