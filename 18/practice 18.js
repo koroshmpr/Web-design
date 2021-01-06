@@ -1,7 +1,7 @@
 //arry concat() method
-let array1 = ['mamad', 'mamali', 'mohamad'];
-let array2 = ['davood', 'david', 'darkoob'];
-console.log(array1.concat(array2));
+let mamada = ['mamad', 'mamali', 'mohamad'];
+let davooda = ['davood', 'david', 'darkoob'];
+console.log(mamada.concat(davooda));
 
 
 //arry copywithin() method
