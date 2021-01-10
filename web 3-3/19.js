@@ -1,15 +1,12 @@
-let fn = prompt("Enter your Firstname")
-let ln = prompt("Enter your Lastname")
-let a = prompt("Enter your Age")
-let h = prompt("Enter your  Height")
+let MyArrey = [];
+for (let i = 0; i < 5; i++) {
+  let answersheet = prompt("Please Enter your answer" + (i + 1));
+  MyArrey.push(answersheet);
 
-let detail = [0, 1, 2, 3]
-detail[0] = fn
-detail[1] = ln
-detail[2] = a
-detail[3] = h
-console.log(detail)
+}
+console.log(MyArrey);
 
+// arry slice()
 let animals = ['ant', 'bison', 'camel', 'duck', 'elephant'];
 
 console.log(animals.slice(2));
