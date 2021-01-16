@@ -24,7 +24,7 @@ if (x !== isNaN && x < 11) {
         main.append(div)
     }
 }
-else if (x > 11) {
+else if (x > 10) {
     alert("Can't show this Much");
 
 }
