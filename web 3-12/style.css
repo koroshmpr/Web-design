@@ -1,0 +1,47 @@
+.font {
+    font-size: 7px;
+    text-align: justify;
+}
+body {
+    background-color: teal;
+}
+.cl {
+color: teal;
+font-size: 20px;
+font-weight: bolder;
+}
+.motion {
+    color: teal;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    background-color: thistle;
+    border-radius: 5%;
+    z-index: -1;
+    animation-name: runner;
+    animation-duration: 7s;
+    animation-timing-function:ease;
+    animation-iteration-count: infinite;
+}
+@keyframes runner {
+0% {
+    transform:translate(-300px,300px);
+}
+25%{
+    transform: translate(300px,300px);
+}
+50% {
+    transform: translate(-900px,300px);
+}
+75%{
+    transform: translate(300px,300px);
+}
+100% {
+    transform:translate(-300px,300px);
+}
+}
+h3 {
+    font-weight: bolder;
+    font-size: 2.2em;
+    transform: rotate(45deg);
+}
