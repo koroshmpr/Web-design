@@ -1,0 +1,13 @@
+html , body {
+    background: linear-gradient(90deg , rgb(194, 101, 194),rgb(108, 108, 236));
+}
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: teal;
+    cursor: pointer;
+}
+.box:hover {
+    background-color: rgb(3, 168, 168);
+    transition: 0.3s;
+}
