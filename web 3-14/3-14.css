@@ -1,0 +1,24 @@
+body {
+    background:linear-gradient(90deg , steelblue , teal) ;
+    
+    width: 100%;
+    height: 100%;
+    color: steelblue
+}
+.box {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    border-radius: 20px;
+    height: 100%;
+    background: linear-gradient(30deg , rgb(248, 178, 194) , rgb(252, 19, 69))
+}
+.text {
+    font-size: 5em;
+    border-radius: 20px;
+    width: 300px;
+    height: 120px;
+    position: relative;
+    color: black;
+    z-index: 1;
+}
