@@ -6,6 +6,7 @@ body {
     color: steelblue
 }
 .box {
+    cursor: pointer;
     z-index: 2;
     position: absolute;
     width: 100%;
