@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: 
+
+Sitemap: https://koroshmpr.netlify.app/project/sitemap.xml
