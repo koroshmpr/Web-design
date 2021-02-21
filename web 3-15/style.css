@@ -4,17 +4,29 @@ html ,body {
     height: 100%;
 }
 .cl {
-    background-color: red;
+    box-shadow: 0px 5px 5px 1px;
+    outline : none;
+    font-weight: bold;
+    background-color: rgb(255, 0, 0);
     border-radius: 30px;
     margin: 0px 15px;
     cursor: pointer;
     padding: 0px 7px;
-    font-size: 15px;
+    font-size: 18px;
+}
+.cl:focus {
+    outline : none;
+}
+.cl:hover {
+    background-color: rgb(163, 3, 3);
+    box-shadow: 0px 3.5px 5px 1px;
 }
 .task{
-    color: white;
+    color: rgb(6, 88, 88);
+    font-weight: 600;
     font-size: 30px;
     margin-left: 30px;
+    margin-top: 10px;
 }
 .formse {
     margin-top: 80px;
@@ -22,5 +34,8 @@ html ,body {
     font-size: 50px;
 }
 #todolist {
-    outline : none
+    margin-left : 150px;
+    text-align: center;
+    outline : none;
+    border : 6px solid black
 }
