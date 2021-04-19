@@ -1,0 +1,12 @@
+body, html {
+    height: 110%;
+    width: 100%;
+background: linear-gradient(90deg , rgb(41, 41, 41) , white)
+}
+.head {
+    border: 3px solid transparent;
+    border-bottom-color: goldenrod;
+}
+.item {
+    box-shadow: -50px 0px 70px 0px black;
+}
