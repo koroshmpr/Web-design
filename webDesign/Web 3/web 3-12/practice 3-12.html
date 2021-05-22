@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>list</title>
+</head>
+
+<body>
+
+    <a href="../../webdesign.html" class="btn btn-dark mt-2 ml-3 shadow">Home</a>
+    <section class="container">
+        <div class="row justify-content-center">
+            <form class="col-5 mt-5 shadow-lg p-5 cl bg-dark rounded" id="myform">
+                <h2 class="text-center mb-3">Creating a resource in <small class="text-muted">jsonplaceholder.typicode.com</small> </h2>
+                <div class="form-group">
+
+                    <label for="title">title : </label>
+                    <input class="form-control" type="text" name="title" id="title" autocomplete="off">
+
+                </div>
+                <div class="form-group">
+
+                    <label for="body">body : </label>
+                    <textarea cols="15" rows="5" class="form-control" type="text" name="body" id="body"
+                        autocomplete="off"></textarea>
+
+                </div>
+                <div class="form-group">
+
+                    <label for="userId">userId : </label>
+                    <input class="form-control" type="number" name="userId" id="userId" autocomplete="off">
+
+                </div>
+                <button class="btn btn-block btn-info shadow-lg" id="btn">Submit</button>
+            </form>
+            <div class="motion"><br><br>
+                <h3>Just Teal</h3>
+            </div>
+            <div class="col-8 my-5 text-center">
+                <button class="btn btn-warning mb-5" id="refresh">Refresh</button>
+                <table>
+                    <thead class="mb-3">
+                        <tr>
+                            <th class="px-5 bg-white rounded-pill">userId</th>
+                            <th class=" bg-white  rounded-pill">Title</th>
+                            <th class=" bg-white mx-2 rounded-pill">Body</th>
+                            <th class=" bg-white mx-2 rounded-pill">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="row-table" class=" mt-5">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="./3-12.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+</body>
+
+</html>

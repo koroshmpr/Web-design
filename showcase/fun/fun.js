@@ -11,6 +11,15 @@ $(".box").on("click",function(){
 let i
 let countera = 0
 for(i=0; i<$('.box').lengh;i++){
+    if($('.main').find(red)){
         countera++
     }
-    $('.countera').prepend(countera)
+    }
+    $('.countera').append(countera)
+let j
+let counterb = 0
+for(j=0; j<$('.box').lengh;j++){
+        counterb++
+    }
+    $('.counterb').append(counterb)
+    console.log($('.main div').length)
