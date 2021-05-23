@@ -3,10 +3,10 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background-color: rgb(245, 252, 217)!important;
+    background: linear-gradient(0deg , #def4e4 , #f4f4bd , #f4d4bd , #b48b8b , #3e6787)!important;
 }
 .wrapper , .wrapper .img-area, .social-idon a , .buttons button {
-    background : #ecf0f3;
+    background : transparent;
     box-shadow: -3px -3px 7px #fff,
                 3px 3px 5px #ceced1;
 }
@@ -34,12 +34,19 @@ body {
     border-radius: 50%;
     font-size: 16px;
 }
+.icon a {
+    color: black;
+}
+.icon a:hover {
+    color: black;
+}
 .wrapper .icon i {
     position: relative;
     z-index: 9;
 }
 .wrapper .icon.arrow {
     left: 15px;
+    font-size: 23px;
 }
 .wrapper .icon.dots {
     bottom: 20px;
@@ -97,7 +104,7 @@ body {
     bottom: 0;
     right: 0;
     border-radius: 50%;
-    background: #ecf0f3;
+    /* background: #ecf0f3; */
     box-shadow: inset -3px -3px 7px #fff,
                 inset 3px 3px 5px #ceced1;
 }
