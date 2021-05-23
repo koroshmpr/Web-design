@@ -33,7 +33,7 @@ body {
     line-height: 35px;
     border-radius: 50%;
     font-size: 16px;
-    transition: 0.5s;
+    transition: 0.2s ;
 }
 .icon a {
     color: black;
@@ -109,10 +109,14 @@ body {
     right: 0;
     border-radius: 50%;
     /* background: #ecf0f3; */
-    box-shadow: inset -3px -3px 7px #fff,
-                inset 3px 3px 5px #ceced1;
-}
+    box-shadow: inset 0px -3px 15px rgb(233, 221, 221),
+                inset 0px 2px 10px #181818;
 
+}
+button:hover {
+    font-size: 16px!important;
+    box-shadow: 0px 0px 0px #CCC;
+}
 .wrapper .icon:hover{
     box-shadow: 0px 2px 3px 0px black;
 }
