@@ -7,8 +7,8 @@ body {
 }
 .wrapper , .wrapper .img-area, .social-idon a , .buttons button {
     background : transparent;
-    box-shadow: -3px -3px 7px #fff,
-                3px 3px 5px #ceced1;
+    box-shadow: -3px -3px 7px rgb(201, 201, 201),
+                3px 3px 5px #636363;
 }
 .wrapper {
     position: relative;
@@ -33,6 +33,7 @@ body {
     line-height: 35px;
     border-radius: 50%;
     font-size: 16px;
+    transition: 0.5s;
 }
 .icon a {
     color: black;
@@ -47,10 +48,12 @@ body {
 .wrapper .icon.arrow {
     left: 15px;
     font-size: 23px;
+    box-shadow: 0px 5px 5px 0px black;
 }
 .wrapper .icon.dots {
     bottom: 20px;
     right: 30px;
+    box-shadow: 0px 5px 5px 0px black;
 }
 .wrapper .img-area {
     height: 150px;
@@ -86,16 +89,17 @@ body {
     margin: 15px 0 25px 0;
 }
 .social-icons a {
+    padding-top: 3px;
+    font-size: 25px;
     position: relative;
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     margin: 0 5px;
     display: inline-flex;
     text-decoration: none!important;
     border-radius: 50%;
 }
 .social-icons a:hover::before,
-.wrapper .icon:hover::before,
 .buttons button:hover:before {
     content: "";
     position: absolute;
@@ -107,6 +111,10 @@ body {
     /* background: #ecf0f3; */
     box-shadow: inset -3px -3px 7px #fff,
                 inset 3px 3px 5px #ceced1;
+}
+
+.wrapper .icon:hover{
+    box-shadow: 0px 2px 3px 0px black;
 }
 .buttons button:hover:before {
     z-index: -1;
@@ -164,21 +172,13 @@ body {
     width: 100%;
     margin-top: 30px;
     padding: 0 5px;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .social-share .row {
     color: #31344b;
     font-size: 17px;
     cursor: pointer;
     position: relative;
-}
-.social-share .row::before {
-    position: absolute;
-    content: "";
-    height: 100%;
-    width: 2px;
-    background: #e0e6eb;
-    margin-left: -25px;
 }
 .row:first-child::before{
     background: none;
