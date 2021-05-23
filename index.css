@@ -7,7 +7,7 @@ body {
 }
 .wrapper , .wrapper .img-area, .social-idon a , .buttons button {
     background : transparent;
-    box-shadow: -3px -3px 7px rgb(201, 201, 201),
+    box-shadow: -3px -2px 5px rgb(224, 224, 224),
                 3px 3px 5px #636363;
 }
 .wrapper {
@@ -48,12 +48,14 @@ body {
 .wrapper .icon.arrow {
     left: 15px;
     font-size: 23px;
-    box-shadow: 0px 5px 5px 0px black;
+    box-shadow: 0px 5px 5px 0px black,
+                0px -2px 5px white;
 }
 .wrapper .icon.dots {
     bottom: 20px;
     right: 30px;
-    box-shadow: 0px 7px 6px 0px black;
+    box-shadow: 0px 7px 6px black,
+                0px -2px 5px white;
 }
 .wrapper .img-area {
     height: 150px;
