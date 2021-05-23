@@ -53,7 +53,7 @@ body {
 .wrapper .icon.dots {
     bottom: 20px;
     right: 30px;
-    box-shadow: 0px 5px 5px 0px black;
+    box-shadow: 0px 7px 6px 0px black;
 }
 .wrapper .img-area {
     height: 150px;
@@ -75,7 +75,7 @@ body {
     object-fit: cover;
 }
 .wrapper .name {
-    font-size: 23px;
+    font-size: 25px;
     font-weight: bolder;
     color: #31344b;
     margin: 10px 0 5px 0;
@@ -116,9 +116,6 @@ body {
 button:hover {
     font-size: 16px!important;
     box-shadow: 0px 0px 0px #CCC;
-}
-.wrapper .icon:hover{
-    box-shadow: 0px 2px 3px 0px black;
 }
 .buttons button:hover:before {
     z-index: -1;
@@ -201,4 +198,12 @@ button:hover {
 .row:nth-child(2):hover i.fa-comment {
     opacity: 1;
     pointer-events: auto;
+}
+.non {
+    box-shadow: 0px 1px 5px black!important;
+}
+.wrapper .arrow:active {
+    box-shadow: 0px 1px 1px black;
+    transform: scale(0.93);
+
 }

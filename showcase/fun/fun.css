@@ -35,6 +35,7 @@ body {
     left:150px;
     font-size: 50px;
     color: white;
+    list-style:none;
 }
 .counterb {
     position: fixed;
@@ -42,4 +43,5 @@ body {
     right:150px;
     font-size: 50px;
     color: white;
+    list-style:none;
 }
