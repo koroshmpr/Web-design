@@ -13,21 +13,29 @@ $(".box").on("click", function () {
     if ($(this).attr("mode") === "red") {
         $(this).css('backgroundColor', 'teal'),
             $(this).attr("mode", "teal"),
-            ulb.removeChild(ulb.childNodes[0])
-        ula.removeChild(ula.childNodes[0])
+            ulb.removeChild(ulb.childNodes[1])
+        ula.removeChild(ula.childNodes[1])
+        let lista = document.createElement('li')
+        let listb = document.createElement('li')
         countera -= 1
-        ula.append(countera)
+        lista.innerText = countera
+        ula.append(lista)
         counterb += 1
-        ulb.append(counterb)
+        listb.innerText = counterb
+        ulb.append(listb)
     }
     else if ($(this).attr("mode") === "teal") {
         $(this).css('backgroundColor', 'rgb' + '(189, ' + '74, ' + '74)'),
             $(this).attr("mode", "red"),
-            ulb.removeChild(ulb.childNodes[0])
-        ula.removeChild(ula.childNodes[0])
+            ulb.removeChild(ulb.childNodes[1])
+        ula.removeChild(ula.childNodes[1])
+        let lista = document.createElement('li')
+        let listb = document.createElement('li')
         countera += 1
-        ula.append(countera)
+        lista.innerText = countera
+        ula.append(lista)
         counterb -= 1
-        ulb.append(counterb)
+        listb.innerText = counterb
+        ulb.append(listb)
     }
 })
