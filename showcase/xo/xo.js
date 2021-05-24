@@ -112,3 +112,35 @@ function winner () {
         $('.cell').attr("mode", "none")
     }
 }
+var min = document.getElementById( 'minutes' );
+ var sec = document.getElementById( 'seconds' );
+ var minutes = 0;
+ var seconds = 0;
+ function startTimer() {
+ seconds++;
+ 
+ if( seconds < 9 ) {
+ sec.innerHTML = "0" + seconds;
+ }
+ 
+ if( seconds > 9 ) {
+ sec.innerHTML =  seconds;
+ }
+ 
+ if ( seconds > 59 ) {
+ minutes++;
+ min.innerHTML = "0" + minutes;
+ seconds = 0;
+ }
+ 
+ if ( minutes > 9 ) {
+ min.innerHTML = minutes;
+ }
+ 
+ }
+ let Interval
+ function start() {
+    clearInterval( Interval );
+    Interval = setInterval( startTimer, 999 );
+    }
+    $('.cell').click(start)

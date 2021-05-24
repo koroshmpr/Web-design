@@ -61,6 +61,12 @@ main {
     }
 }
 #result {
+    margin: auto;
+    border-radius: 10px;
+    width: 300px;
+    background-color: red;
+    text-align: center;
+    height: 50px;
     text-align: center;
     color: white;
     font-size: 40px;
