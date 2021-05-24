@@ -1,7 +1,7 @@
 body, html {
     height: 110%;
     width: 100%;
-background: linear-gradient(90deg , rgb(41, 41, 41) , white)
+    background: linear-gradient(0deg , #def4e4 , #f4f4bd , #f4d4bd , #b48b8b , #3e6787)!important;
 }
 .head {
     border: 3px solid transparent;
