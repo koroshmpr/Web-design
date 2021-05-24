@@ -16,17 +16,19 @@ function rd(e) {
 }
 reld.addEventListener('click', rd)
 $('.cell').on("click", function () {
-    if ($(this).attr("mode") === "white" & $(this).attr("Condition") !== "check") {
+    if ($(this).attr("mode") === "white" & $(this).attr("Condition") !== "checkx" & $(this).attr("Condition") !== "checko" ){
         $(this).css('backgroundColor', 'teal'),
         this.innerText ='X'
             $('.cell').attr("mode", "teal"),
-            $(this).attr("Condition", "check")
+            $(this).attr("Condition", "checkx")
+            winner()
     }
-    else if ($(this).attr("mode") === "teal" & $(this).attr("Condition") !== "check") {
+    else if ($(this).attr("mode") === "teal" & $(this).attr("Condition") !== "checkx" & $(this).attr("Condition") !== "checko") {
         $(this).css('backgroundColor', 'red'),
             $('.cell').attr("mode", "white"),
         this.innerText ='O'
-            $(this).attr("Condition", "check")
+            $(this).attr("Condition", "checko")
+            winner()
     }
     // else if ($(this).attr("mode") === "red") {
     //     $(this).css('backgroundColor', 'teal'),
@@ -34,3 +36,79 @@ $('.cell').on("click", function () {
     // }
 
 })
+let result = document.getElementById('result')
+function winner () {
+    if ($('#one').attr('condition') === 'checkx' & $('#two').attr('condition') === 'checkx' & $('#three').attr('condition') === 'checkx') {
+        result.innerText = 'You Win'
+        $('.cell').attr("mode", "none")
+    }
+    else if ($('#one').attr('condition') === 'checkx' & $('#five').attr('condition') === 'checkx' & $('#nine').attr('condition') === 'checkx') {
+        result.innerText = 'You Win'
+        $('.cell').attr("mode", "none")
+    }
+    else if ($('#one').attr('condition') === 'checkx' & $('#four').attr('condition') === 'checkx' & $('#seven').attr('condition') === 'checkx') {
+        result.innerText = 'You Win'
+        $('.cell').attr("mode", "none")
+    }
+    else if ($('#four').attr('condition') === 'checkx' & $('#five').attr('condition') === 'checkx' & $('#six').attr('condition') === 'checkx') {
+        result.innerText = 'You Win'
+        $('.cell').attr("mode", "none")
+    }
+    else if ($('#seven').attr('condition') === 'checkx' & $('#eight').attr('condition') === 'checkx' & $('#nine').attr('condition') === 'checkx') {
+        result.innerText = 'You Win'
+        $('.cell').attr("mode", "none")
+    }
+    else if ($('#seven').attr('condition') === 'checkx' & $('#eight').attr('condition') === 'checkx' & $('#nine').attr('condition') === 'checkx') {
+        result.innerText = 'You Win'
+        $('.cell').attr("mode", "none")
+    }
+    else if ($('#three').attr('condition') === 'checkx' & $('#five').attr('condition') === 'checkx' & $('#seven').attr('condition') === 'checkx') {
+        result.innerText = 'You Win'
+        $('.cell').attr("mode", "none")
+    }
+    else if ($('#two').attr('condition') === 'checkx' & $('#five').attr('condition') === 'checkx' & $('#eight').attr('condition') === 'checkx') {
+        result.innerText = 'You Win'
+        $('.cell').attr("mode", "none")
+    }
+    else if ($('#three').attr('condition') === 'checkx' & $('#six').attr('condition') === 'checkx' & $('#nine').attr('condition') === 'checkx') {
+        result.innerText = 'You Win'
+        $('.cell').attr("mode", "none")
+    }
+    
+    else if ($('#one').attr('condition') === 'checko' & $('#two').attr('condition') === 'checko' & $('#three').attr('condition') === 'checko') {
+        result.innerText = 'You Lose'
+        $('.cell').attr("mode", "none")
+    }
+    else if ($('#one').attr('condition') === 'checko' & $('#five').attr('condition') === 'checko' & $('#nine').attr('condition') === 'checko') {
+        result.innerText = 'You lose'
+        $('.cell').attr("mode", "none")
+    }
+    else if ($('#one').attr('condition') === 'checko' & $('#four').attr('condition') === 'checko' & $('#seven').attr('condition') === 'checko') {
+        result.innerText = 'You Lose'
+        $('.cell').attr("mode", "none")
+    }
+    else if ($('#four').attr('condition') === 'checko' & $('#five').attr('condition') === 'checko' & $('#six').attr('condition') === 'checko') {
+        result.innerText = 'You Lose'
+        $('.cell').attr("mode", "none")
+    }
+    else if ($('#seven').attr('condition') === 'checko' & $('#eight').attr('condition') === 'checko' & $('#nine').attr('condition') === 'checko') {
+        result.innerText = 'You Lose'
+        $('.cell').attr("mode", "none")
+    }
+    else if ($('#seven').attr('condition') === 'checko' & $('#eight').attr('condition') === 'checko' & $('#nine').attr('condition') === 'checko') {
+        result.innerText = 'You Lose'
+        $('.cell').attr("mode", "none")
+    }
+    else if ($('#three').attr('condition') === 'checko' & $('#five').attr('condition') === 'checko' & $('#seven').attr('condition') === 'checko') {
+        result.innerText = 'You Lose'
+        $('.cell').attr("mode", "none")
+    }
+    else if ($('#two').attr('condition') === 'checko' & $('#five').attr('condition') === 'checko' & $('#eight').attr('condition') === 'checko') {
+        result.innerText = 'You Lose'
+        $('.cell').attr("mode", "none")
+    }
+    else if ($('#three').attr('condition') === 'checko' & $('#six').attr('condition') === 'checko' & $('#nine').attr('condition') === 'checko') {
+        result.innerText = 'You Lose'
+        $('.cell').attr("mode", "none")
+    }
+}

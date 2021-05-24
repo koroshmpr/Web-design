@@ -60,4 +60,9 @@ main {
         font-size: 50px
     }
 }
+#result {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
     
