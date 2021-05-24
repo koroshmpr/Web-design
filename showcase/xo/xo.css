@@ -9,6 +9,7 @@ main {
                 -2px -2px 9px white;
 }
 .cell{
+    font-size: 100px;
     border-radius: 15px;
     margin: 10px 0px;
     width: 170px;
@@ -35,3 +36,11 @@ main {
     box-shadow: 1px 1px 5px black,
                 -3px -2px 4px white;
 }
+@media screen and (max-width: 960px){
+    .cell {
+        width: 90px;
+        height: 90px;
+        font-size: 60px
+    }
+};
+    
