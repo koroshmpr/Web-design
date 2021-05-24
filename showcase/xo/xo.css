@@ -44,11 +44,19 @@ main {
         font-size: 70px
     }
 }
-@media screen and  (max-width: 539px){
+@media screen and (min-width:420px) and  (max-width: 539px){
     .cell {
         margin: 5px 5px;
         width: 120px;
         height: 120px;
+        font-size: 70px
+    }
+}
+@media screen and (max-width:419px) {
+    .cell {
+        margin: 5px 5px;
+        width: 100px;
+        height: 100px;
         font-size: 70px
     }
 }
