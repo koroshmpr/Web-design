@@ -3,7 +3,7 @@ body {
 }
 .main {
     background-color: transparent;
-    width: 700px;
+    width: 650px;
     height: 700px;
     flex-wrap: wrap;
 }
@@ -44,4 +44,53 @@ body {
     font-size: 50px;
     color: white;
     list-style:none;
+}
+@media screen and (max-width:360px) {
+    .countera {
+        top: 70%;
+        left: 35px;
+        font-size: 30px;
+    }
+    .counterb {
+        top: 70%;
+        right: 35px;
+        font-size: 30px;
+    }
+    .box {
+        width: 23px;
+        height: 23px;
+    }
+    .brd {
+        width: 25px;
+        height: 25px;
+    }
+    .main {
+        width: 90%;
+        height: 50%;;
+    }
+}
+@media screen and (min-width:850px) and (max-width:1150px) {
+    .countera {
+        top: 50%;
+        left: 25px;
+        font-size: 30px;
+    }
+    .counterb {
+        top: 50%;
+        right: 25px;
+        font-size: 30px;
+    }
+}
+@media screen and (min-width:361px) and (max-width:849px) {
+    .countera {
+        top: 80%;
+        left: 45px;
+        font-size: 50px;
+    }
+    .counterb {
+        top: 80%;
+        right: 45px;
+        font-size: 50px;
+    }
+
 }
