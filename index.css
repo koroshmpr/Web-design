@@ -231,6 +231,8 @@ button:hover {
     transform: scale(0.93);
 
 } .inf {
+    height: 140px;
+    overflow: auto;
     box-shadow: inset 0px -2px 5px rgb(214, 214, 214),
                 inset 0px 1px 5px #181818 !important;
 }
