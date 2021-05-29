@@ -1,26 +1,8 @@
 body, html {
-    height: 110%;
-    width: 100%;
+    min-height: 100%;
     background: linear-gradient(0deg , #def4e4 , #f4f4bd , #f4d4bd , #b48b8b , #3e6787)!important;
 }
-.head {
-    border: 3px solid transparent;
-    border-bottom-color: goldenrod;
-}
-.item {
-    border: transparent;
-    color: yellow;
-    background-color: teal;
-    font-weight: bolder;
-    font-size: 35px;
-    border-radius: 15px;
-    height: 90px;
-    width: 150px;
-    transition: 0.5s;
-    outline: none;
-}
-.item:hover {
-    color: yellow;
-    transform: translateY(5px);
-    box-shadow: 1px 10px 20px 0px black;
+.card {
+    box-shadow: 1px 2px 5px 0px black,
+               inset -1px -1px 15px 0px rgb(153, 152, 152);
 }

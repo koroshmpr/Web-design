@@ -1,0 +1,33 @@
+#snakeboard {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid lightskyblue;
+    border-radius: 20px;
+  }
+  body {
+      background-color: black;
+  }
+  #score {
+    text-align: center;
+    font-size: 140px;
+    color: white;
+  } 
+  .ll{
+
+      text-align: center;
+  }
+  .btn {
+      border: transparent;
+      border-radius: 5px;
+      box-shadow: 1px 2px 5px black,
+                    -1px -1px 3px white;
+      width: 70px;
+      height: 35px;
+      background-color: lightskyblue;
+  }
+  .btn:hover {
+      transition: 0.5s;
+    transform: translateY(-2px);
+  }

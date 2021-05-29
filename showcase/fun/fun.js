@@ -25,8 +25,8 @@ $(".box").on("click", function () {
         ulb.append(listb)
     }
     else if ($(this).attr("mode") === "teal") {
-        $(this).css('backgroundColor', 'rgb' + '(189, ' + '74, ' + '74)'),
-            $(this).attr("mode", "red"),
+        $(this).css('backgroundColor', 'rgb(189, 74, 74)'),
+        $(this).attr("mode", "red"),
             ulb.removeChild(ulb.childNodes[1])
         ula.removeChild(ula.childNodes[1])
         let lista = document.createElement('li')
