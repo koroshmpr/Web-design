@@ -46,7 +46,7 @@ const board_border = 'black';
         drawSnake();
         // Repeat
         main();
-      }, 100)
+      }, 60)
     }
     
     // draw a border around the canvas

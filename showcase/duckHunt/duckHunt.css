@@ -1,0 +1,75 @@
+.dog {
+    position: absolute;
+    top:75%;
+    min-width: 175px;
+    min-height: 157px;
+    background: url(./image/01t.png);
+    background-repeat: no-repeat;
+    animation: walk 5s ;
+    animation-timing-function: ease;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+@keyframes walk {
+    10% {
+        background: url(./image/02t.png);
+        background-repeat: no-repeat;
+        transform: translateX(50px);
+    }
+    20% {
+        background: url(./image/03t.png);
+        background-repeat: no-repeat;
+        transform: translateX(100px);
+        
+    }
+    40% {
+        background: url(./image/04t.png);
+        background-repeat: no-repeat;
+        transform: translateX(150px);
+        
+    }
+    50% {
+        background: url(./image/03t.png);
+        background-repeat: no-repeat;
+        transform: translateX(200px);
+        
+    }
+    60% {
+        background: url(./image/04t.png);
+        background-repeat: no-repeat;
+        transform: translateX(250px);
+        
+    }
+    80% {
+        background: url(./image/05t.png);
+        background-repeat: no-repeat;
+        transform: translateX(270px);
+        
+    }
+    90% {
+        background: url(./image/06t.png);
+        background-repeat: no-repeat;
+        transform: translateX(470px)translateY(-130px);
+        
+    }
+    100% {
+        background: transparent;
+        background-repeat: no-repeat;
+        transform: translateX(470px)translateY(-120px);
+        
+    }
+}
+body {
+    max-width: 1280px;
+    background: url(./image/stage.png);
+}
+.duck {
+    
+  position: relative;
+  top: 300px;
+  left: 700px;
+    visibility: hidden;
+    width: 112px;
+    height: 112px;
+    background: url(./image/duckt.png);
+}
