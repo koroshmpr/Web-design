@@ -71,7 +71,7 @@ body{
     background-repeat: no-repeat;
 }
 .duck {
-    
+    cursor: pointer;
   position: relative;
   top: 300px;
   left: 700px;
