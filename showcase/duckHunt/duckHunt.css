@@ -5,57 +5,69 @@
     min-height: 157px;
     background: url(./image/01t.png);
     background-repeat: no-repeat;
-    animation: walk 6s ;
+    animation: walk 6.5s ;
     animation-timing-function: ease;
-    animation-delay: 1s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 @keyframes walk {
     10% {
         background: url(./image/02t.png);
         background-repeat: no-repeat;
-        transform: translateX(50px);
+        transform: translateX(40px);
     }
     20% {
         background: url(./image/03t.png);
         background-repeat: no-repeat;
-        transform: translateX(100px);
+        transform: translateX(80px);
+        
+    }
+    30% {
+        background: url(./image/04t.png);
+        background-repeat: no-repeat;
+        transform: translateX(120px);
         
     }
     40% {
-        background: url(./image/04t.png);
+        background: url(./image/03t.png);
         background-repeat: no-repeat;
-        transform: translateX(150px);
+        transform: translateX(160px);
         
     }
     50% {
-        background: url(./image/03t.png);
+        background: url(./image/04t.png);
         background-repeat: no-repeat;
         transform: translateX(200px);
         
     }
     60% {
+        background: url(./image/03t.png);
+        background-repeat: no-repeat;
+        transform: translateX(240px);
+        
+    }
+    70% {
         background: url(./image/04t.png);
         background-repeat: no-repeat;
-        transform: translateX(250px);
+        transform: translateX(280px);
         
     }
     80% {
         background: url(./image/05t.png);
         background-repeat: no-repeat;
-        transform: translateX(270px);
+        transform: translateX(320px);
         
     }
     90% {
         background: url(./image/06t.png);
         background-repeat: no-repeat;
-        transform: translateX(470px)translateY(-130px);
+        transform: translateX(460px)translateY(-170px);
         
     }
     100% {
         background: transparent;
         background-repeat: no-repeat;
-        transform: translateX(470px)translateY(-120px);
+        transform: translateX(480px)translateY(-130px);
         
     }
 }
@@ -79,8 +91,28 @@ body{
     width: 112px;
     height: 112px;
     background: url(./image/duckt.png);
+    transition: 1s;
 }
 .score {
     color: white;
     font-size: 50px;
+}
+.lose {
+    position: absolute; 
+    min-width: 1280px;
+    height: 70%;
+    background-color: transparent;
+}
+.live {
+    margin-left: 30px;
+    color: red;
+    font-size: 30px;
+}
+.tit {
+    margin: auto;
+    width: 600px;
+    height: 600px;
+    background-color: transparent;
+    color: red;
+    font-size: 100px;
 }
