@@ -91,7 +91,8 @@ body{
     width: 112px;
     height: 112px;
     background: url(./image/duckt.png);
-    transition: 1s;
+    transition: 1.5s;
+    transition-timing-function: unset;
 }
 .score {
     color: white;
@@ -114,5 +115,6 @@ body{
     height: 600px;
     background-color: transparent;
     color: red;
-    font-size: 100px;
+    font-size: 120px;
+    font-weight: bolder;
 }

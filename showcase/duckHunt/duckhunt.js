@@ -1,11 +1,14 @@
 let score = 0
+let find = 0
+const heart = document.getElementById('hrt')
 let sco = document.getElementById('sco')
+let flap = document.getElementById('flap')
 const caught = document.getElementById('caught')
 const ls = document.getElementById('ls')
+const board = document.getElementById('brd')
 sco.append(score)
 window.onload = function () {
-    setTimeout(func1, 7000);
-    
+    setTimeout(func1, 7000)
 };
 const x = document.getElementById("myAudio")
 function srd() {
@@ -19,7 +22,6 @@ function func1() {
     $('#dk').css('visibility', 'visible')
 }
 
-const board = document.getElementById('brd')
 function change() {
     var bodyWidth = board.clientWidth
     var bodyHeight = board.clientHeight;
@@ -33,32 +35,29 @@ function change() {
     else if (randPosX > 600) {
         $(this).css('transform', 'rotateY(0deg')
     }
-
 }
 $('#dk').on('click', change);
 setInterval(function () {
-    change()
-}, 1500);
-let find = 0
-const heart = document.getElementById('hrt')
+    change();
+}, 900);
 $('#losing').click(loser)
 function loser() {
     heart.removeChild(heart.childNodes[0])
     let ht = document.createElement('i');
     ht.classList = ('fas fa-heart-broken');
-    ht.setAttribute('mode' , 'dead')
+    ht.setAttribute('mode', 'dead')
     heart.append(ht)
     find++
     caught.play()
-    if (find === 3) { 
+    if (find === 3) {
         const tit = document.createElement('div')
         tit.innerText = 'YOU LOSE'
         tit.classList = "tit"
         ls.play()
-       board.append(tit)
-        setTimeout(function(){
+        board.append(tit)
+        setTimeout(function () {
             location.reload()
 
-        },2000)
+        }, 2000)
     }
 }
