@@ -2,7 +2,6 @@ let score = 0
 let find = 0
 const heart = document.getElementById('hrt')
 let sco = document.getElementById('sco')
-let flap = document.getElementById('flap')
 const caught = document.getElementById('caught')
 const ls = document.getElementById('ls')
 const board = document.getElementById('brd')
