@@ -17,8 +17,7 @@ function srd() {
     sco.removeChild(sco.childNodes[1]);
     score += 10
     sco.append(score)
-    if (score === 100 && find > 0 || score === 200 && find > 0 || score === 300 && find > 0 || score === 400 && find > 0 
-        || score === 500 && find > 0 || score === 600 && find > 0 || score === 600 && find > 0 || score === 700 && find > 0 || score === 800 && find > 0) {
+    if ((score === 100 && find > 0) || (score === 200 && find > 0 )|| (score === 300 && find > 0) || (score === 400 && find > 0) || (score === 500 && find > 0 )|| (score === 600 && find > 0) || (score === 600 && find > 0) || (score === 700 && find > 0) || (score === 800 && find > 0)) {
         heart.removeChild(heart.lastChild)
         sce.play()
         find--
@@ -33,7 +32,6 @@ function func1() {
 }
 
 function change() {
-    console.log(find)
     var bodyWidth = board.clientWidth
     var bodyHeight = board.clientHeight;
     var randPosX = Math.floor((Math.random() * bodyWidth));
