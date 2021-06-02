@@ -1,3 +1,6 @@
+const xsound= document.getElementById('xsound')
+const osound= document.getElementById('osound')
+const winsound = document.getElementById('winsound')
 let box = $('.cell')
 let reld = document.getElementById('reld')
 function rd(e) {
@@ -12,6 +15,7 @@ $('.cell').on("click", function () {
             $('.cell').attr("mode", "teal"),
             $(this).attr("Condition", "checkx")
             winner()
+            xsound.play()
     }
     else if ($(this).attr("mode") === "teal" & $(this).attr("Condition") !== "checkx" & $(this).attr("Condition") !== "checko") {
         $(this).css('backgroundColor', 'red'),
@@ -19,6 +23,7 @@ $('.cell').on("click", function () {
         this.innerText ='O'
             $(this).attr("Condition", "checko")
             winner()
+            osound.play()
     }
 })
 let result = document.getElementById('result')
@@ -26,75 +31,94 @@ function winner () {
     if ($('#one').attr('condition') === 'checkx' & $('#two').attr('condition') === 'checkx' & $('#three').attr('condition') === 'checkx') {
         result.innerText = 'X Win'
         $('.cell').attr("mode", "none")
+        winsound.play()
     }
     else if ($('#one').attr('condition') === 'checkx' & $('#five').attr('condition') === 'checkx' & $('#nine').attr('condition') === 'checkx') {
         result.innerText = 'X Win'
         $('.cell').attr("mode", "none")
+        winsound.play()
     }
     else if ($('#one').attr('condition') === 'checkx' & $('#four').attr('condition') === 'checkx' & $('#seven').attr('condition') === 'checkx') {
         result.innerText = 'X Win'
         $('.cell').attr("mode", "none")
+        winsound.play()
     }
     else if ($('#four').attr('condition') === 'checkx' & $('#five').attr('condition') === 'checkx' & $('#six').attr('condition') === 'checkx') {
         result.innerText = 'X Win'
         $('.cell').attr("mode", "none")
+        winsound.play()
     }
     else if ($('#seven').attr('condition') === 'checkx' & $('#eight').attr('condition') === 'checkx' & $('#nine').attr('condition') === 'checkx') {
         result.innerText = 'X Win'
         $('.cell').attr("mode", "none")
+        winsound.play()
     }
     else if ($('#seven').attr('condition') === 'checkx' & $('#eight').attr('condition') === 'checkx' & $('#nine').attr('condition') === 'checkx') {
         result.innerText = 'X Win'
         $('.cell').attr("mode", "none")
+        winsound.play()
     }
     else if ($('#three').attr('condition') === 'checkx' & $('#five').attr('condition') === 'checkx' & $('#seven').attr('condition') === 'checkx') {
         result.innerText = 'X Win'
         $('.cell').attr("mode", "none")
+        winsound.play()
     }
     else if ($('#two').attr('condition') === 'checkx' & $('#five').attr('condition') === 'checkx' & $('#eight').attr('condition') === 'checkx') {
         result.innerText = 'X Win'
         $('.cell').attr("mode", "none")
+        winsound.play()
     }
     else if ($('#three').attr('condition') === 'checkx' & $('#six').attr('condition') === 'checkx' & $('#nine').attr('condition') === 'checkx') {
         result.innerText = 'X Win'
         $('.cell').attr("mode", "none")
+        winsound.play()
     }
     
     else if ($('#one').attr('condition') === 'checko' & $('#two').attr('condition') === 'checko' & $('#three').attr('condition') === 'checko') {
         result.innerText = 'O Win'
         $('.cell').attr("mode", "none")
+        winsound.play()
     }
     else if ($('#one').attr('condition') === 'checko' & $('#five').attr('condition') === 'checko' & $('#nine').attr('condition') === 'checko') {
         result.innerText = 'O Win'
         $('.cell').attr("mode", "none")
+        winsound.play()
     }
     else if ($('#one').attr('condition') === 'checko' & $('#four').attr('condition') === 'checko' & $('#seven').attr('condition') === 'checko') {
         result.innerText = 'O Win'
         $('.cell').attr("mode", "none")
+        winsound.play()
     }
     else if ($('#four').attr('condition') === 'checko' & $('#five').attr('condition') === 'checko' & $('#six').attr('condition') === 'checko') {
         result.innerText = 'O Win'
         $('.cell').attr("mode", "none")
+        winsound.play()
     }
     else if ($('#seven').attr('condition') === 'checko' & $('#eight').attr('condition') === 'checko' & $('#nine').attr('condition') === 'checko') {
         result.innerText = 'O Win'
         $('.cell').attr("mode", "none")
+        winsound.play()
     }
     else if ($('#seven').attr('condition') === 'checko' & $('#eight').attr('condition') === 'checko' & $('#nine').attr('condition') === 'checko') {
         result.innerText = 'O Win'
         $('.cell').attr("mode", "none")
+        winsound.play()
     }
     else if ($('#three').attr('condition') === 'checko' & $('#five').attr('condition') === 'checko' & $('#seven').attr('condition') === 'checko') {
         result.innerText = 'O Win'
         $('.cell').attr("mode", "none")
+        winsound.play()
     }
     else if ($('#two').attr('condition') === 'checko' & $('#five').attr('condition') === 'checko' & $('#eight').attr('condition') === 'checko') {
         result.innerText = 'O Win'
         $('.cell').attr("mode", "none")
+        winsound.play()
     }
     else if ($('#three').attr('condition') === 'checko' & $('#six').attr('condition') === 'checko' & $('#nine').attr('condition') === 'checko') {
         result.innerText = 'O Win'
         $('.cell').attr("mode", "none")
+        winsound.play()
+        
     }
 }
 var min = document.getElementById( 'minutes' );
