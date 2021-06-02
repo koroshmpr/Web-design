@@ -1,5 +1,6 @@
 let score = 0
 let find = 0
+let num = 0
 const heart = document.getElementById('hrt')
 let sco = document.getElementById('sco')
 const caught = document.getElementById('caught')
@@ -28,12 +29,13 @@ function change() {
     var randPosY = Math.floor((Math.random() * bodyHeight / 2));
     $('#dk').css('left', randPosX);
     $('#dk').css('top', randPosY);
-    if (randPosX < bodyWidth) {
-        $(this).css('transform', 'rotateY(180deg')
+    if (randPosX < bodyWidth/2){
+        num = 180
     }
-    else if (randPosX > bodyWidth) {
-        $(this).css('transform', 'rotateY(0deg')
+    else if (randPosX> bodyWidth/2) {
+        num =0
     }
+    $('#dk').css('transform', `rotateY(${num}deg)`)
 }
 $('#dk').on('click', change);
 setInterval(function () {

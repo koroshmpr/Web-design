@@ -1,5 +1,5 @@
 .dog {
-    position: fixed;
+    position: absolute;
     bottom:5%;
     width: 175px;
     height: 157px;
@@ -83,24 +83,22 @@
         
     }
 }
-body{
-    max-width: 100%;
-    max-height: 100%;
+:root{
+    width: 100%;
+    height: 100%;
 }
 .board {
-    border-radius: 20px;
+    position: relative;
     margin: auto;
     max-width: 80%;
-    height: 760px;
+    height:750px;
     background: url(./image/stage.png);
     background-repeat: no-repeat;
     background-size: 100%;
 }
 .duck {
     cursor: pointer;
-  position: fixed;
-  top: 300px;
-  left: 500px;
+  position: absolute;
     visibility: hidden;
     width: 112px;
     height: 112px;
@@ -115,7 +113,7 @@ body{
     font-size: 50px;
 }
 .lose {
-    position: fixed; 
+    position: absolute; 
     top: 0px;
     width: 80%;
     height: 80%;
@@ -148,6 +146,9 @@ body{
     }
     .dog {
         width: 100px;
-        top: 60%;
+        top: 50%;
+    }
+    .board {
+        width: 100%;
     }
 }
