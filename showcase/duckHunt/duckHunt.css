@@ -1,72 +1,84 @@
 .dog {
-    position: absolute;
+    position: fixed;
     bottom:5%;
-    min-width: 175px;
-    min-height: 157px;
+    width: 175px;
+    height: 157px;
     background: url(./image/01t.png);
     background-repeat: no-repeat;
     animation: walk 6.5s ;
     animation-timing-function: ease;
     animation-delay: 0.5s;
     animation-fill-mode: forwards;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 @keyframes walk {
     10% {
         background: url(./image/02t.png);
         background-repeat: no-repeat;
+        background-size: 100%;
         transform: translateX(40px);
     }
     20% {
         background: url(./image/03t.png);
         background-repeat: no-repeat;
+        background-size: 100%;
         transform: translateX(80px);
         
     }
     30% {
         background: url(./image/04t.png);
         background-repeat: no-repeat;
+        background-size: 100%;
         transform: translateX(120px);
         
     }
     40% {
         background: url(./image/03t.png);
         background-repeat: no-repeat;
+        background-size: 100%;
         transform: translateX(160px);
         
     }
     50% {
         background: url(./image/04t.png);
         background-repeat: no-repeat;
+        background-size: 100%;
         transform: translateX(200px);
         
     }
     60% {
         background: url(./image/03t.png);
         background-repeat: no-repeat;
+        background-size: 100%;
         transform: translateX(240px);
         
     }
     70% {
         background: url(./image/04t.png);
         background-repeat: no-repeat;
+        background-size: 100%;
         transform: translateX(280px);
         
     }
     80% {
         background: url(./image/05t.png);
         background-repeat: no-repeat;
+        background-size: 100%;
         transform: translateX(320px);
         
     }
     90% {
         background: url(./image/06t.png);
         background-repeat: no-repeat;
+        background-size: 100%;
         transform: translateX(460px)translateY(-170px);
         
     }
     100% {
         background: transparent;
         background-repeat: no-repeat;
+        background-size: 100%;
         transform: translateX(480px)translateY(-130px);
         
     }
@@ -76,32 +88,37 @@ body{
     max-height: 100%;
 }
 .board {
+    border-radius: 20px;
     margin: auto;
-    max-width: 1280px;
+    max-width: 80%;
     height: 760px;
     background: url(./image/stage.png);
     background-repeat: no-repeat;
+    background-size: 100%;
 }
 .duck {
     cursor: pointer;
-  position: relative;
+  position: fixed;
   top: 300px;
-  left: 700px;
+  left: 500px;
     visibility: hidden;
     width: 112px;
     height: 112px;
     background: url(./image/duckt.png);
     transition: 1.5s;
     transition-timing-function: unset;
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 .score {
     color: white;
     font-size: 50px;
 }
 .lose {
-    position: absolute; 
-    min-width: 1280px;
-    height: 70%;
+    position: fixed; 
+    top: 0px;
+    width: 80%;
+    height: 80%;
     background-color: transparent;
 }
 .live {
@@ -117,4 +134,20 @@ body{
     color: red;
     font-size: 120px;
     font-weight: bolder;
+}
+@media screen and (max-width:1200px) {
+    .duck {
+        width: 70px;
+        height: 70px;
+    }
+    .score {
+        font-size: 25px;
+    }
+    .live {
+        font-size: 20px;
+    }
+    .dog {
+        width: 100px;
+        top: 60%;
+    }
 }

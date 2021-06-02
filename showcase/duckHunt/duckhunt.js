@@ -24,14 +24,14 @@ function func1() {
 function change() {
     var bodyWidth = board.clientWidth
     var bodyHeight = board.clientHeight;
-    var randPosX = Math.floor((Math.random() * bodyWidth / 1.2));
+    var randPosX = Math.floor((Math.random() * bodyWidth));
     var randPosY = Math.floor((Math.random() * bodyHeight / 2));
     $('#dk').css('left', randPosX);
     $('#dk').css('top', randPosY);
-    if (randPosX < 600) {
+    if (randPosX < bodyWidth) {
         $(this).css('transform', 'rotateY(180deg')
     }
-    else if (randPosX > 600) {
+    else if (randPosX > bodyWidth) {
         $(this).css('transform', 'rotateY(0deg')
     }
 }
@@ -44,7 +44,6 @@ function loser() {
     heart.removeChild(heart.childNodes[0])
     let ht = document.createElement('i');
     ht.classList = ('fas fa-heart-broken');
-    ht.setAttribute('mode', 'dead')
     heart.append(ht)
     find++
     caught.play()
