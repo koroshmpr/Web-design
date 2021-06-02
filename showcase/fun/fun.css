@@ -3,13 +3,13 @@ body {
 }
 .main {
     background-color: transparent;
-    width: 650px;
+    width: 790px;
     height: 700px;
     flex-wrap: wrap;
 }
 .box {
-    width: 55px;
-    height: 55px;
+    width: 25px;
+    height: 25px;
     background-color: rgb(189, 74,  74);
     transition: 0.5s;
 }
@@ -26,8 +26,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     background-color: rgb(204, 200, 200);
 }
 @keyframes turner {

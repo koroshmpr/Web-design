@@ -2,12 +2,12 @@ let lista = document.createElement('li')
 let listb = document.createElement('li')
 let ula = document.getElementById('coua')
 let ulb = document.getElementById('coub')
-let countera = 81
+const click = document.getElementById('click')
+let countera = 400
 let counterb = 0
 lista.innerText = countera
 listb.innerText = counterb
 ula.append(lista)
-console.log(listb)
 ulb.append(listb)
 $(".box").on("click", function () {
     if ($(this).attr("mode") === "red") {
@@ -23,6 +23,7 @@ $(".box").on("click", function () {
         counterb += 1
         listb.innerText = counterb
         ulb.append(listb)
+        click.play()
     }
     else if ($(this).attr("mode") === "teal") {
         $(this).css('backgroundColor', 'rgb(189, 74, 74)'),
@@ -37,5 +38,6 @@ $(".box").on("click", function () {
         counterb -= 1
         listb.innerText = counterb
         ulb.append(listb)
+        click.play()
     }
 })
