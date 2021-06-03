@@ -1,6 +1,7 @@
-const xsound= document.getElementById('xsound')
-const osound= document.getElementById('osound')
+const xsound = document.getElementById('xsound')
+const osound = document.getElementById('osound')
 const winsound = document.getElementById('winsound')
+const draw = document.getElementById('draw')
 let box = $('.cell')
 let reld = document.getElementById('reld')
 function rd(e) {
@@ -9,25 +10,27 @@ function rd(e) {
 }
 reld.addEventListener('click', rd)
 $('.cell').on("click", function () {
-    if ($(this).attr("mode") === "white" & $(this).attr("Condition") !== "checkx" & $(this).attr("Condition") !== "checko" ){
+    if ($(this).attr("mode") === "white" & $(this).attr("Condition") !== "checkx" & $(this).attr("Condition") !== "checko") {
         $(this).css('backgroundColor', 'teal'),
-        this.innerText ='X'
-            $('.cell').attr("mode", "teal"),
-            $(this).attr("Condition", "checkx")
-            winner()
-            xsound.play()
+            this.innerText = 'X'
+        $('.cell').attr("mode", "teal"),
+            $(this).attr("Condition", "checkx"),
+            $(this).attr("place", "used")
+        winner()
+        xsound.play()
     }
     else if ($(this).attr("mode") === "teal" & $(this).attr("Condition") !== "checkx" & $(this).attr("Condition") !== "checko") {
         $(this).css('backgroundColor', 'red'),
             $('.cell').attr("mode", "white"),
-        this.innerText ='O'
-            $(this).attr("Condition", "checko")
-            winner()
-            osound.play()
+            this.innerText = 'O'
+        $(this).attr("Condition", "checko")
+        $(this).attr("place", "used")
+        winner()
+        osound.play()
     }
 })
 let result = document.getElementById('result')
-function winner () {
+function winner() {
     if ($('#one').attr('condition') === 'checkx' & $('#two').attr('condition') === 'checkx' & $('#three').attr('condition') === 'checkx') {
         result.innerText = 'X Win'
         $('.cell').attr("mode", "none")
@@ -73,7 +76,7 @@ function winner () {
         $('.cell').attr("mode", "none")
         winsound.play()
     }
-    
+
     else if ($('#one').attr('condition') === 'checko' & $('#two').attr('condition') === 'checko' & $('#three').attr('condition') === 'checko') {
         result.innerText = 'O Win'
         $('.cell').attr("mode", "none")
@@ -118,38 +121,47 @@ function winner () {
         result.innerText = 'O Win'
         $('.cell').attr("mode", "none")
         winsound.play()
-        
+
     }
+    else if ($('#one').attr('place') === 'used' &
+     $('#two').attr('place') === 'used' & $('#three').attr('place') === 'used' &
+      $('#four').attr('place') === 'used' & $('#five').attr('place') === 'used' & 
+      $('#six').attr('place') === 'used' & $('#seven').attr('place') === 'used' &
+       $('#eight').attr('place') === 'used' & $('#nine').attr('place') === 'used') {
+           result.innerText = 'Draw',
+        $('.cell').attr("mode", "none"),
+        draw.play()
+       }
 }
-var min = document.getElementById( 'minutes' );
- var sec = document.getElementById( 'seconds' );
- var minutes = 0;
- var seconds = 0;
- function startTimer() {
- seconds++;
- 
- if( seconds < 9 ) {
- sec.innerHTML = "0" + seconds;
- }
- 
- if( seconds > 9 ) {
- sec.innerHTML =  seconds;
- }
- 
- if ( seconds > 59 ) {
- minutes++;
- min.innerHTML = "0" + minutes;
- seconds = 0;
- }
- 
- if ( minutes > 9 ) {
- min.innerHTML = minutes;
- }
- 
- }
- let Interval
- function start() {
-    clearInterval( Interval );
-    Interval = setInterval( startTimer, 999 );
+var min = document.getElementById('minutes');
+var sec = document.getElementById('seconds');
+var minutes = 0;
+var seconds = 0;
+function startTimer() {
+    seconds++;
+
+    if (seconds < 9) {
+        sec.innerHTML = "0" + seconds;
     }
-    $('.cell').click(start)
+
+    if (seconds > 9) {
+        sec.innerHTML = seconds;
+    }
+
+    if (seconds > 59) {
+        minutes++;
+        min.innerHTML = "0" + minutes;
+        seconds = 0;
+    }
+
+    if (minutes > 9) {
+        min.innerHTML = minutes;
+    }
+
+}
+let Interval
+function start() {
+    clearInterval(Interval);
+    Interval = setInterval(startTimer, 999);
+}
+$('.cell').click(start)

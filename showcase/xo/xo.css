@@ -9,6 +9,7 @@ main {
                 -2px -2px 9px white;
 }
 .cell{
+    cursor: pointer;
     font-size: 100px;
     border-radius: 15px;
     margin: 10px 0px;
