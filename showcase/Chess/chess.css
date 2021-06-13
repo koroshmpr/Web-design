@@ -1,0 +1,55 @@
+body {
+	background: teal;
+	padding:50px;
+}
+ 
+table {
+    background: rgb(185, 241, 192);
+	margin: 0 auto;
+	border-collapse: collapse;
+}
+td {
+    text-align: center;
+    width: 4vw; height: 4vw;
+    font-weight: bolder;
+    font-size: 2vw;
+}
+ 
+.white{background:rgb(169, 255, 183)}
+.black{background:rgb(50, 150, 37)}
+th {
+    background: transparent;
+}
+i {
+    font-size: 2.5vw;
+}
+.p1 {
+    color: black;
+}
+.p2 {
+    color: white;
+}
+.wl {
+    font-weight: bolder;
+    color: white;
+    padding: 4px;
+    border-bottom: 5px solid white;
+    margin-right: 30px;
+}
+.bl {
+    font-weight: bolder;
+    color: black;
+    padding: 4px;
+    border-bottom: 5px solid black;
+    margin-right: 30px;
+}
+#loserb {
+    position: fixed;
+    left: 50px;
+    top: 40px;
+}
+#loserw {
+    position: fixed;
+    right: 50px;
+    top: 40px;
+}
