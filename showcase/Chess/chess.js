@@ -19,7 +19,9 @@ function drop(ev) {
      mored == 'asbbl' || mored == 'asbbr' || 
      mored == 'filbl' || mored == 'filbr' || 
      mored == 'qb'){
-        blackls.append(ev.target.firstChild)
+        let ja = document.createElement('div')
+         ja.append(ev.target.firstChild)
+          blackls.append(ja)
     }
     else if (mored  == 'sarwc' || mored == 'sarwa' ||
     mored == 'sarwb' || mored == 'sarwd' || mored == 'sarwe' ||
@@ -28,10 +30,11 @@ function drop(ev) {
       mored == 'asbwl' || mored == 'asbwr' || 
       mored == 'filwl' || mored == 'filwr' || 
       mored == 'qw'){
-          whitels.append(ev.target.firstChild)
+         let ja = document.createElement('div')
+         ja.append(ev.target.firstChild)
+          whitels.append(ja)
         }
     }
-   
         ev.target.appendChild(document.getElementById(data));
     
 }
@@ -43,3 +46,15 @@ $('.p1').attr('draggable', 'true')
 $('.p1').attr('ondragstart', 'drag(event)')
 $('.p2').attr('draggable', 'true')
 $('.p2').attr('ondragstart', 'drag(event)')
+
+
+$('.fas').on('click',function() {
+    console.log(this.getAttribute('id') , this.parentElement.getAttribute('id'))
+    if(this.getAttribute('id') == 'sarwd'){
+
+        $('#d-five').css('backgroundColor' , 'khaki')
+        $('#d-five').css('opacity' , '10%')
+        $('#d-six').css('backgroundColor' , 'khaki')
+        $('#d-six').css('opacity' , '10%')
+    }
+})
