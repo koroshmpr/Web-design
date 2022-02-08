@@ -46,15 +46,14 @@ $('.p1').attr('draggable', 'true')
 $('.p1').attr('ondragstart', 'drag(event)')
 $('.p2').attr('draggable', 'true')
 $('.p2').attr('ondragstart', 'drag(event)')
-
+let pl = document.createElement('div')
 
 $('.fas').on('click',function() {
-    console.log(this.getAttribute('id') , this.parentElement.getAttribute('id'))
-    if(this.getAttribute('id') == 'sarwd'){
-
-        $('#d-five').css('backgroundColor' , 'khaki')
-        $('#d-five').css('opacity' , '10%')
-        $('#d-six').css('backgroundColor' , 'khaki')
-        $('#d-six').css('opacity' , '10%')
-    }
+    $(this.parentElement).toggleClass('khaki')
+    pl.appendChild(this)
+    console.log(this)
+})
+$('td').on('click', function() {
+    this.append(pl)
+    pl.removeChild
 })

@@ -64,3 +64,22 @@ i {
     top: 40px;
     text-align: center;
 }
+@media  screen and (max-width:600px) {
+    td {
+        text-align: center;
+        width: 12vw; height: 10vw;
+        font-weight: bolder;
+        font-size: 4vw;
+    }
+    i {
+        font-size: 5vw;
+    }
+    #loserb , #loserw {
+        top: 80%;
+    }
+    
+}
+.khaki {
+    background-color: khaki;
+}
+ 
