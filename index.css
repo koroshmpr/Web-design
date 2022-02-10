@@ -102,7 +102,7 @@ body {
     margin: 15px 0 25px 0;
 }
 .social-icons a {
-    transition: 0.2s;
+    transition: 2s!important;
     padding-top: 4px;
     font-size: 25px;
     position: relative;
@@ -273,6 +273,9 @@ button:hover {
     text-align: center;
     margin : 5px 5px;
     transition: 0.5s !important;
+    box-shadow:-2px -2px 3px rgb(224, 224, 224),
+                3px 3px 5px #363636,
+                inset 2px 2px 5px white!important;
 }
 .site:hover {
     transform: scale(1.1);
@@ -291,10 +294,24 @@ button:hover {
 .cv:hover {
     transform: scale(0.95);
     text-decoration: none;  
+    font-size: 14.5px;
     box-shadow: -2px -2px 1px rgb(224, 224, 224),
                  3px 3px 2px #363636 !important;
+}
+.cv:active {
+    box-shadow: inset -2px -2px 2px rgb(214, 214, 214),
+                inset 2px 1px 2px #181818 !important;
 }
 .web>div>ol {
     padding-left: 0!important;
     margin-left: 0!important;
+}
+.inf>span>a {
+    color: red;
+    transition: 0.5s;
+}
+.inf>span>a:hover {
+    color: rgb(167, 29, 29);
+    font-size: 17px;
+    text-decoration: none;
 }
