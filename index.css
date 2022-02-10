@@ -11,7 +11,7 @@ body {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    min-height: 70vh;
+    min-height: 65vh;
     margin: 20px 0px;
 }
 .wrapper , .wrapper .img-area, .social-icon a , .buttons button {
