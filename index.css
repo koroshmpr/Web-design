@@ -281,3 +281,20 @@ button:hover {
     color:black;
     text-decoration: none;
 }
+.cv {
+    margin-top: 50px;
+    text-align: center;
+    font-weight: bolder;
+    text-decoration: none;
+    transition: 0.7s!important;
+}
+.cv:hover {
+    transform: scale(0.95);
+    text-decoration: none;  
+    box-shadow: -2px -2px 1px rgb(224, 224, 224),
+                 3px 3px 2px #363636 !important;
+}
+.web>div>ol {
+    padding-left: 0!important;
+    margin-left: 0!important;
+}
