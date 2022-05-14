@@ -157,6 +157,7 @@
        transform: rotate(90deg);
     }
     .board , body {
+        margin: 0;
         width: 90vh;
         max-height: 50vh;
 
