@@ -137,9 +137,14 @@
     font-weight: bolder;
 }
 @media screen and (max-width:1200px) {
+    .tit {
+        width: 400px;
+        height: 200px;
+        font-size: 80px;
+    }
     .duck {
-        width: 70px;
-        height: 70px;
+        width: 60px;
+        height: 60px;
     }
     .score {
         font-size: 25px;
@@ -152,14 +157,21 @@
         top: 70%;
     }
     html {
-        width: 90vh;
-        max-height: 50vh;
+        margin-top: 5px;
+        margin-bottom: 0;
+        width: 100vh;
+        max-height: 55vh;
        transform: rotate(90deg);
     }
-    .board , body {
+     body {
+
+        width: 100vh;
+        max-height: 55vh;
+     }
+    .board{
         margin: 0;
-        width: 90vh;
-        max-height: 50vh;
+        width: 100vh;
+        max-height: 55vh;
 
     }
     @keyframes walk {
