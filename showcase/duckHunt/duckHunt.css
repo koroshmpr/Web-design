@@ -152,12 +152,12 @@
         top: 70%;
     }
     html {
-        width: 100vh;
+        width: 90vh;
         max-height: 50vh;
        transform: rotate(90deg);
     }
     .board , body {
-        width: 100vh;
+        width: 90vh;
         max-height: 50vh;
 
     }
