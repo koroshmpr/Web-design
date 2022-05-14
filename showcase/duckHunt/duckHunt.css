@@ -84,17 +84,20 @@
     }
 }
 :root{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
 }
 .board {
+    border: 10px solid rgb(82, 82, 82);
+    box-shadow: 0px 5px 10px 3px black;
+    border-radius: 12px;
     position: relative;
     margin: auto;
-    max-width: 80%;
+    max-width: 85%;
     height:750px;
     background: url(./image/stage.png);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
 }
 .duck {
     cursor: pointer;
@@ -145,10 +148,88 @@
         font-size: 20px;
     }
     .dog {
-        width: 100px;
-        top: 50%;
+        width: 70px;
+        top: 70%;
     }
-    .board {
-        width: 100%;
+    html {
+        width: 100vh;
+        max-height: 60vh;
+       transform: rotate(90deg);
+    }
+    .board , body {
+        width: 100vh;
+        max-height: 60vh;
+
+    }
+    @keyframes walk {
+        10% {
+            background: url(./image/02t.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            transform: translateX(10px);
+        }
+        20% {
+            background: url(./image/03t.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            transform: translateX(30px);
+            
+        }
+        30% {
+            background: url(./image/04t.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            transform: translateX(50px);
+            
+        }
+        40% {
+            background: url(./image/03t.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            transform: translateX(60px);
+            
+        }
+        50% {
+            background: url(./image/04t.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            transform: translateX(80px);
+            
+        }
+        60% {
+            background: url(./image/03t.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            transform: translateX(100px);
+            
+        }
+        70% {
+            background: url(./image/04t.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            transform: translateX(120px);
+            
+        }
+        80% {
+            background: url(./image/05t.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            transform: translateX(140px);
+            
+        }
+        90% {
+            background: url(./image/06t.png);
+            background-repeat: no-repeat;
+            background-size: 100%;
+            transform: translateX(140px)translateY(-50px);
+            
+        }
+        100% {
+            background: transparent;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            transform: translateX(140px)translateY(-30px);
+            
+        }
     }
 }
