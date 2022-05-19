@@ -112,6 +112,8 @@
     background-size: 100%;
 }
 .score {
+    font-weight: bold;
+    padding: 0.5rem;
     color: white;
     font-size: 50px;
 }
