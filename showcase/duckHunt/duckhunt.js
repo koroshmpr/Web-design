@@ -1,15 +1,26 @@
 let score = 0
 let find = 0
 let num = 0
+let i
+let counter = localStorage.length
 const heart = document.getElementById('hrt')
 let sco = document.getElementById('sco')
+let HighScore = document.getElementById('hsco')
 const caught = document.getElementById('caught')
 const ls = document.getElementById('ls')
 const board = document.getElementById('brd')
 const sce = document.getElementById('score')
 sco.append(score)
+const allScore = []
 window.onload = function () {
-    setTimeout(func1, 7000)
+    setTimeout(func1, 7000);
+     function allStorage() {
+        for (let i = 0; i<localStorage.length; i++) {
+            allScore[i] = localStorage.getItem(i); }}
+    allStorage();
+    let findHigh = Math.max(...allScore)
+    HighScore.append(findHigh);
+    
 };
 const x = document.getElementById("myAudio")
 function srd() {
@@ -64,6 +75,7 @@ function loser() {
         tit.classList = "tit"
         ls.play()
         board.append(tit)
+        localStorage.setItem((counter), score)
         setTimeout(function () {
             location.reload()
 

@@ -115,6 +115,13 @@
     color: white;
     font-size: 50px;
 }
+.highScore {
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    padding-left: 1rem;
+    font-weight: bold;
+    opacity: 80%;
+}
 .lose {
     position: absolute; 
     top: 0px;
@@ -149,6 +156,9 @@
     .score {
         font-size: 25px;
     }
+    .highScore {
+        font-size: 15px;
+    }
     .live {
         font-size: 20px;
     }
@@ -171,7 +181,7 @@
     .board{
         margin: 0;
         width: 100vh;
-        max-height: 55vh;
+        max-height: 50vh;
 
     }
     @keyframes walk {
