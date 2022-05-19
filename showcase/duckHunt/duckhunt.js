@@ -19,7 +19,14 @@ window.onload = function () {
             allScore[i] = localStorage.getItem(i); }}
     allStorage();
     let findHigh = Math.max(...allScore)
-    HighScore.append(findHigh);
+    if(!findHigh){
+        HighScore.append('None Scored !');
+        
+    }
+    else {
+        HighScore.append(findHigh);
+
+    }
     
 };
 const x = document.getElementById("myAudio")
