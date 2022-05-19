@@ -20,7 +20,7 @@ window.onload = function () {
     allStorage();
     let findHigh = Math.max(...allScore)
     if(!findHigh){
-        HighScore.append('None Scored !');
+        HighScore.innerText('None Scored !');
         
     }
     else {
