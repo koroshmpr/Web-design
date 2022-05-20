@@ -20,7 +20,6 @@ window.onload = function () {
         }
     allStorage();
     let findHigh = Number(Math.max(...allScore))
-    console.log(findHigh);
         HighScore.append(findHigh);
 
 }
