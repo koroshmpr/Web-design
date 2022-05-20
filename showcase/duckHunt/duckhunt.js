@@ -16,12 +16,14 @@ window.onload = function () {
     setTimeout(func1, 7000);
      function allStorage() {
         for (let i = 0; i<localStorage.length; i++) {
-            allScore[i] = localStorage.getItem(i); }}
+            allScore[i] = localStorage.getItem(i);  }
+        }
     allStorage();
-    let findHigh = Math.max(...allScore)
+    let findHigh = Number(Math.max(...allScore))
+    console.log(findHigh);
         HighScore.append(findHigh);
 
-    }
+}
  
 const x = document.getElementById("myAudio")
 function srd() {
