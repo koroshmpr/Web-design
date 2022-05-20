@@ -111,11 +111,36 @@
     background-repeat: no-repeat;
     background-size: 100%;
 }
+.fas {
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    transition: 1s;
+    animation: live 2s ;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    background-repeat: no-repeat;
+}
+@keyframes live {
+    
+    10% { transform: scale(0.8);
+        color: rgb(240, 77, 77);
+    }
+    50% { transform: scale(1.4);
+        color: rgb(136, 20, 20);
+    }
+    100% { transform: scale(1)
+    }
+
+}
 .score {
     font-weight: bold;
     padding: 0.5rem;
     color: white;
     font-size: 50px;
+}
+.upScore {
+    transition: 0.5s;
+    transform: scale(2);
 }
 .highScore {
     color: rgb(255, 255, 255);
