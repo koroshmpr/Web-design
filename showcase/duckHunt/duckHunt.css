@@ -101,6 +101,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;
+    user-select: none;
 }
 .duck {
     cursor: crosshair;
@@ -228,10 +229,11 @@
     font-size: 70px;
     position: absolute;
     top: 20%;
-    left: 10%;
+    left: 12%;
     color: white;
     font-weight: bold;
     z-index: 0;
+    text-shadow: 0 5px black;
 }
 @media screen and (max-width:1200px) {
     @keyframes intro {

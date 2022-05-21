@@ -11,18 +11,21 @@ const ls = document.getElementById('ls')
 const board = document.getElementById('brd')
 const sce = document.getElementById('score')
 const flap = document.getElementById('flapping')
-
 sco.append(score)
+
 const allScore = []
 window.onload = function () {
     setTimeout(function () { 
         $('#go').css('visibility', 'visible');
         $('#title').css('visibility', 'hidden');
     }, 6500);
+
     setTimeout(function () { 
         $('#go').css('visibility', 'hidden')
     }, 7000);
+
     setTimeout(func1, 8500);
+
      function allStorage() {
         for (let i = 0; i<localStorage.length; i++) {
             allScore[i] = localStorage.getItem(i);  }
@@ -30,12 +33,12 @@ window.onload = function () {
     allStorage();
     let findHigh = Number(Math.max(...allScore))
         HighScore.append(findHigh);
-
 }
- 
+
 const x = document.getElementById("myAudio")
 function srd() {
     $('#dk').toggleClass('scoreBounce')
+
     setTimeout(function () { 
         $('#dk').removeClass('scoreBounce');
     }, 700);
@@ -52,7 +55,6 @@ function srd() {
         heart.prepend(hb)
     }
 }
-$('#dk').click(srd)
 function func1() {
     $('#dk').css('visibility', 'visible');
     flap.play();
@@ -72,14 +74,17 @@ function change() {
         num = 0
     };
     $('#dk').css('transform', `rotateY(${num}deg)`);
-    
-
 }
 $('#dk').on('click', change);
 setInterval(function () {
     change();
 }, 900);
-$('#losing').click(loser)
+
+setTimeout(() => {
+    $('#dk').click(srd);
+    $('#losing').click(loser)
+}, 7000);
+
 function loser() {
     heart.removeChild(heart.firstChild)
     let ht = document.createElement('i');
@@ -92,11 +97,11 @@ function loser() {
         tit.innerText = 'YOU LOSE'
         tit.classList = "tit"
         ls.play()
+        $('#go').css('visibility', 'hidden')
         board.append(tit)
         localStorage.setItem((counter), score)
         setTimeout(function () {
             location.reload()
-
         }, 2000)
     }
 }
