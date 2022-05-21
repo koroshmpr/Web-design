@@ -24,7 +24,7 @@ window.onload = function () {
         $('#go').css('visibility', 'hidden')
     }, 7000);
 
-    setTimeout(func1, 8500);
+    setTimeout(func1, 7500);
 
      function allStorage() {
         for (let i = 0; i<localStorage.length; i++) {
