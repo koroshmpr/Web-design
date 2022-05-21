@@ -233,6 +233,17 @@
         max-height: 50vh;
 
     }
+    @keyframes score {
+        0%{
+            border: 15px dashed rgb(250, 44, 44);
+            border-radius: 100%;
+            padding: 0.2rem;
+        }
+        100%{
+            border: 0;
+        }
+        
+    }
     @keyframes walk {
         10% {
             background: url(./image/02t.png);
