@@ -10,6 +10,7 @@ const caught = document.getElementById('caught')
 const ls = document.getElementById('ls')
 const board = document.getElementById('brd')
 const sce = document.getElementById('score')
+
 sco.append(score)
 const allScore = []
 window.onload = function () {
@@ -26,6 +27,10 @@ window.onload = function () {
  
 const x = document.getElementById("myAudio")
 function srd() {
+    $('#dk').toggleClass('scoreBounce')
+    setTimeout(function () { 
+        $('#dk').removeClass('scoreBounce');
+    }, 700);
     x.play();
     sco.removeChild(sco.childNodes[1]);
     score += 10
@@ -56,8 +61,10 @@ function change() {
     }
     else if (randPosX > bodyWidth / 2) {
         num = 0
-    }
-    $('#dk').css('transform', `rotateY(${num}deg)`)
+    };
+    $('#dk').css('transform', `rotateY(${num}deg)`);
+    
+
 }
 $('#dk').on('click', change);
 setInterval(function () {
