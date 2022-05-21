@@ -10,11 +10,19 @@ const caught = document.getElementById('caught')
 const ls = document.getElementById('ls')
 const board = document.getElementById('brd')
 const sce = document.getElementById('score')
+const flap = document.getElementById('flapping')
 
 sco.append(score)
 const allScore = []
 window.onload = function () {
-    setTimeout(func1, 7000);
+    setTimeout(function () { 
+        $('#go').css('visibility', 'visible');
+        $('#title').css('visibility', 'hidden');
+    }, 6500);
+    setTimeout(function () { 
+        $('#go').css('visibility', 'hidden')
+    }, 7000);
+    setTimeout(func1, 8500);
      function allStorage() {
         for (let i = 0; i<localStorage.length; i++) {
             allScore[i] = localStorage.getItem(i);  }
@@ -46,7 +54,8 @@ function srd() {
 }
 $('#dk').click(srd)
 function func1() {
-    $('#dk').css('visibility', 'visible')
+    $('#dk').css('visibility', 'visible');
+    flap.play();
 }
 
 function change() {
