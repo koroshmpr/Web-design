@@ -245,6 +245,7 @@
         }
     }
     .title {
+        text-shadow: 0 2px black;
         font-size: 30px;
         top: 30%;
         left: 20%;}
