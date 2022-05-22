@@ -66,6 +66,8 @@ function srd() {
         bounce.play()
         speed -= 100 
         score += 20
+        sco.removeChild(sco.childNodes[1]);
+        sco.append(score)
         time -= 0.1
     }
     }
