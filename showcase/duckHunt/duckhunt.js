@@ -68,6 +68,10 @@ function srd() {
         score += 20
         sco.removeChild(sco.childNodes[1]);
         sco.append(score)
+        $('#sco').toggleClass('green')
+        setTimeout(function () { 
+            $('#sco').removeClass('green');
+        }, 500);
         time -= 0.1
     }
     }

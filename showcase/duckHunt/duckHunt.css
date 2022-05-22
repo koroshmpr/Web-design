@@ -103,6 +103,9 @@ body{
     z-index: 1;
     user-select: none;
 }
+.green {
+    color: green !important;
+}
 .duck {
     cursor: crosshair;
     position: absolute;
