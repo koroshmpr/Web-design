@@ -14,6 +14,7 @@ const board = document.getElementById('brd')
 const sce = document.getElementById('score')
 const flap = document.getElementById('flapping')
 const lose = document.getElementById('losing')
+const bounce = document.getElementById('bounce')
 sco.append(score)
 $('#dk').css('transition', `${time}s`)
 const allScore = []
@@ -59,8 +60,12 @@ function srd() {
         hb.classList = ('fas fa-heart');
         heart.prepend(hb)
     }
-    else if ((score === 100)  || (score === 200) || (score === 300 ) || (score === 400) || (score === 500) || (score === 600) || (score === 600) || (score === 700) || (score === 800) ) {
+    else if ((score === 100 && find === 0)  || (score === 200 && find === 0) || 
+    (score === 300 && find === 0) || (score === 400 && find === 0) || (score === 500 && find === 0) || 
+    (score === 600) || (score === 700 && find === 0) || (score === 800 && find === 0) || (score === 900 && find === 0) ) {
+        bounce.play()
         speed -= 100 
+        score += 20
         time -= 0.1
     }
     }
