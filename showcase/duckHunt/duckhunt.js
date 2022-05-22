@@ -2,6 +2,8 @@ let score = 0
 let find = 0
 let num = 0
 let i
+let speed = 1000
+let time = 2
 let counter = localStorage.length
 const heart = document.getElementById('hrt')
 let sco = document.getElementById('sco')
@@ -11,8 +13,9 @@ const ls = document.getElementById('ls')
 const board = document.getElementById('brd')
 const sce = document.getElementById('score')
 const flap = document.getElementById('flapping')
+const lose = document.getElementById('losing')
 sco.append(score)
-
+$('#dk').css('transition', `${time}s`)
 const allScore = []
 window.onload = function () {
     setTimeout(function () { 
@@ -48,13 +51,20 @@ function srd() {
     sco.append(score)
     if ((score === 100 && find > 0) || (score === 200 && find > 0 )|| (score === 300 && find > 0) || (score === 400 && find > 0) || (score === 500 && find > 0 )|| (score === 600 && find > 0) || (score === 600 && find > 0) || (score === 700 && find > 0) || (score === 800 && find > 0)) {
         heart.removeChild(heart.lastChild)
-        sce.play()
+        sce.play();
         find--
+        speed -= 100 
+        time -= 0.1
         let hb = document.createElement('i');
         hb.classList = ('fas fa-heart');
         heart.prepend(hb)
     }
-}
+    else if ((score === 100)  || (score === 200) || (score === 300 ) || (score === 400) || (score === 500) || (score === 600) || (score === 600) || (score === 700) || (score === 800) ) {
+        speed -= 100 
+        time -= 0.1
+    }
+    }
+
 function func1() {
     $('#dk').css('visibility', 'visible');
     flap.play();
@@ -78,7 +88,7 @@ function change() {
 $('#dk').on('click', change);
 setInterval(function () {
     change();
-}, 900);
+}, speed);
 
 setTimeout(() => {
     $('#dk').click(srd);
@@ -91,6 +101,11 @@ function loser() {
     ht.classList = ('fas fa-heart-broken');
     heart.append(ht)
     find++
+    $('#losing').toggleClass('loseHeat')
+
+    setTimeout(function () { 
+        $('#losing').removeClass('loseHeat');
+    }, 500);
     caught.play()
     if (find === 3) {
         const tit = document.createElement('div')

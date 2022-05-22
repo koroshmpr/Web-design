@@ -110,7 +110,6 @@ body{
     width: 112px;
     height: 112px;
     background: url(./image/duckt.png);
-    transition: 1.5s;
     transition-timing-function: unset;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -182,6 +181,10 @@ body{
     background-color: transparent;
     z-index: 1;
     user-select: none;
+}
+.loseHeat {
+    background-color: red;
+    opacity: 45%;
 }
 .live {
     margin-left: 30px;
