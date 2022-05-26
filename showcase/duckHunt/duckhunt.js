@@ -51,7 +51,14 @@ function srd() {
     sco.removeChild(sco.childNodes[1]);
     score += 10
     sco.append(score)
-    if ((score === 100 && find > 0) || (score === 200 && find > 0 )|| (score === 300 && find > 0) || (score === 400 && find > 0) || (score === 500 && find > 0 )|| (score === 600 && find > 0) || (score === 600 && find > 0) || (score === 700 && find > 0) || (score === 800 && find > 0)) {
+    if ((score === 100 && find > 0) || (score === 200 && find > 0 )|| 
+    (score === 300 && find > 0) || (score === 400 && find > 0) || 
+    (score === 500 && find > 0 )|| (score === 600 && find > 0) || 
+    (score === 600 && find > 0) || (score === 700 && find > 0) || 
+    (score === 800 && find > 0) || (score === 800 && find > 0)
+    || (score === 900 && find > 0) || (score === 1000 && find > 0)
+    || (score === 1100 && find > 0) || (score === 1200 && find > 0)
+    || (score === 1300 && find > 0) || (score === 1400 && find > 0)) {
         heart.removeChild(heart.lastChild)
         sce.play();
         find--
@@ -63,7 +70,10 @@ function srd() {
     }
     else if ((score === 100 && find === 0)  || (score === 200 && find === 0) || 
     (score === 300 && find === 0) || (score === 400 && find === 0) || (score === 500 && find === 0) || 
-    (score === 600) || (score === 700 && find === 0) || (score === 800 && find === 0) || (score === 900 && find === 0) ) {
+    (score === 600 && find === 0) || (score === 700 && find === 0) || (score === 800 && find === 0) || 
+    (score === 900 && find === 0) || (score === 1000 && find === 0)  || (score === 1100 && find === 0) || 
+    (score === 1200 && find === 0) || (score === 1300 && find === 0) || (score === 1400 && find === 0)
+    || (score === 1500 && find === 0) || (score === 1600 && find === 0) || (score === 1700 && find === 0)){
         bounce.play()
         speed -= 100 
         score += 20
