@@ -104,7 +104,7 @@ body{
     user-select: none;
 }
 .green {
-    color: green !important;
+    color: rgb(30, 236, 30) !important;
 }
 .duck {
     cursor: crosshair;
