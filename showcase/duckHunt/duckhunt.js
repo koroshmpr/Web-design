@@ -15,6 +15,7 @@ const sce = document.getElementById('score')
 const flap = document.getElementById('flapping')
 const lose = document.getElementById('losing')
 const bounce = document.getElementById('bounce')
+const duck = document.getElementById('dk')
 sco.append(score)
 $('#dk').css('transition', `${time}s`)
 const allScore = []
@@ -123,6 +124,8 @@ function loser() {
         tit.innerText = 'YOU LOSE'
         tit.classList = "tit"
         ls.play()
+        lose.remove();
+        duck.remove();
         $('#go').css('visibility', 'hidden')
         board.append(tit)
         localStorage.setItem((counter), score)
