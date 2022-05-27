@@ -74,7 +74,7 @@
 .side-bar {
     position: absolute;
     top: 200px;
-    right: 80px;
+    right: 20px;
     color: black;
     width: 200px;
 }
@@ -143,4 +143,7 @@
     .show-item {
         transition: 0.1s;
       visibility: hidden;
+    }
+    .ddown-item {
+        transform: translateX(-100px);
     }
