@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="travel agency">
+  <meta name="keywords" content="offers, vacation, trips">
+  <meta name="author" content="korosh Mpr">
+  <title>Mr.Tour, Best Travel Agency</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./Images/favicon-32x32.png">
+</head>
+
+<body>
+  <header class="head container pt-5">
+    <nav class="navbar navbar-expand-lg nav-header">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-header"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <a class="navbar-brand fw-bold" href="#"><i class="bi bi-grid"></i> <img src="./Images/icon.png" alt="" srcset="">
+        Mr.Tour</a>
+      <div class="dropdown col-3 d-md-none d-block">
+        <button class="dropdown-toggle img-man" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <img class="img-man" src="./Images/user-man.png" alt="man">
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Change Password</a></li>
+          <li><a class="dropdown-item" href="#">Log out</a></li>
+        </ul>
+      </div>
+      <article class="collapse navbar-collapse row col-9 " id="navbar-collapse-header">
+        <div class="navbar-nav justify-content-around align-items-center ">
+          <div class="col-md-6 col-2 text-center fw-bold list d-block d-md-flex my-md-1 my-5">
+            <a class="mx-3" href="#">Home</a>
+            <a class="mx-3" href="#">About</a>
+            <a class="mx-3" href="#">Destinations</a>
+            <a class="mx-3" href="#">Tours</a>
+            <a class="mx-3" href="#">Blog</a>
+          </div>
+
+          <div class="col-2 list fs-5 d-none d-md-flex">
+            <a href="#" class="mx-2" disabled><i class="text-black-50 bi bi-geo-alt"></i></a>
+            <a href="#" class="mx-2 Feedback" disabled><i class="text-black-50 bi bi-bell"></i> <span
+                class="notfication"></span></a>
+          </div>
+          <div class="col-2 row justify-content-center align-items-center d-none d-md-flex">
+            <div class="col row justify-content-between bg-secondary bg-opacity-10 p-2 text-center rounded-4 ">
+              <button type="button" class="col btn nav-button"><i class="text-black-50 bi bi-star-fill"></i></button>
+              <button type="button" class="col btn btn-light shadow-sm"><i class="bi bi-lightning-fill"></i></button>
+            </div>
+          </div>
+
+      </article>
+      <div class="dropdown col-3 d-md-block d-none">
+        <button class="dropdown-toggle img-man" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <img class="img-man" src="./Images/user-man.png" alt="man">
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+          <li><a class="dropdown-item" href="#">Change Password</a></li>
+          <li><a class="dropdown-item" href="#">Log out</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="row">
+      <article class="side-bar text-center">
+        <p>
+          <button id="info" class="info" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+            aria-expanded="false" aria-controls="collapseWidthExample">
+            <h3 class="fw-bolder text-start fs-1">Info <span>
+                  <i id='arrow-down' class="fs-3 text-danger bi bi-caret-down-fill"></i>
+                  <i id="arrow-up" class="fs-3 show-item text-danger bi bi-caret-up-fill"></i></span>
+                </h3>
+          </button>
+        </p>
+        <div style="min-height: 150px;">
+          <div class="collapse collapse" id="collapseWidthExample">
+            <div class="card card-body info">
+              <a class="row align-items-center my-2" href="#">
+                <div class="col-3 icon-bg"><i class="text-success fs-5 bi bi-calendar"></i></div>
+                <div class="text-start col-8 ">
+                  <p>Date</p>
+                  <h6>21 June 2021</h6>
+                </div>
+              </a>
+              <a class="row align-items-center my-2" href="#">
+                <div class="col-3 icon-bg"><i class="text-primary fs-5 bi bi-clock"></i></div>
+                <div class="text-start col-8">
+                  <p>Time</p>
+                  <h6>20 June, 5 July</h6>
+                </div>
+              </a>
+              <a class="row align-items-center my-2" href="#">
+                <div class="col-3 icon-bg"><i class="fs-5 bi bi-person-plus"></i></div>
+                <div class="text-start col-8">
+                  <p>Guests</p>
+                  <h6>Yes</h6>
+                </div>
+              </a>
+              <a class="row align-items-center my-2" href="#">
+                <div class="col-3 icon-bg"><i class="text-warning fs-5 bi bi-currency-dollar"></i></div>
+                <div class="text-start col-8">
+                  <p>Price</p>
+                  <h6>$2k</h6>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="row justify-content-center slide-main my-5">
+        <div class="col-md-4 col-10">
+          <h2>Let's make your <span class="text-success">dream</span> vacation.</h2>
+          <p>Plan and book your perfect trip with expert <br> advice, travel tips, destination information and <br>
+            inspiration from us</p>
+          <div class="row justify-content-center align-items-center">
+            <div class="col-5"><button class="btn btn-dark w-100 py-3 fw-bold fs-5" type="button">Discover</button>
+            </div>
+            <div class="col-2 text-center"> <i class="call-icon bi bi-telephone-fill"></i></div>
+            <div class="col-4 fw-bold fs-5 text-start"> Request a <br> Call Back</div>
+          </div>
+        </div>
+        <div class="col-md-7 col">
+          <img src="./Images/image.png" alt="mainImage">
+        </div>
+      </article>
+      <article class="row justify-content-evenly align-items-center">
+        <div class="col-5 text-start box-user">
+          <img class="user" src="./Images/girl-01.png" alt="user-girl">
+          <img class="user" src="./Images/man-01.png" alt="user-man">
+          <span class="user user-more"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+              fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+              <path
+                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+            </svg></span>
+        </div>
+        <div class="col-2 text-start">
+          <h3 class="fw-bolder fs-1">12</h3>
+          <p class="text-black-50 fw-bold">Total Trip(month)</p>
+        </div>
+        <div class="col-1 py-3 text-center ">
+          <div class="theme-icon p-2 fw-bold">
+            28 <br>
+            <p>Theme traveled</p>
+          </div>
+        </div>
+
+      </article>
+    </section>
+    <section class="row justify-content-around mt-5">
+      <article id="slider-design" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./Images/Carousel/Slide-01.png" class="d-block w-100" alt="slide01">
+          </div>
+          <div class="carousel-item">
+            <img src="./Images/Carousel/Slide-02.png" class="d-block w-100" alt="slide02">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider-design" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bg-secondary" aria-hidden="true"></span>
+          <span class="visually-hidden ">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#slider-design" data-bs-slide="next">
+          <span class="carousel-control-next-icon bg-secondary" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </article>
+    </section>
+  </main>
+  <footer class="footer">
+    <section class="row mt-5 justify-content-around">
+      <div class="col-md-3 col">
+        <ul class="list">
+          <li class="my-2">Company</li>
+          <li class="my-2">About</li>
+          <li class="my-2">Careers</li>
+          <li class="my-2">Support</li>
+          <li class="my-2">Media kit</li>
+          <li class="my-2">Testimonials</li>
+          <li class="my-2">API</li>
+          <li class="my-2">Terms of service</li>
+          <li class="my-2">Privacy policy</li>
+        </ul>
+      </div>
+      <div class="col-md-3 col">
+        <ul class="list">
+          <li class="my-2">Directories</li>
+          <li class="my-2">Design jobs</li>
+          <li class="my-2">Designers for hire</li>
+          <li class="my-2">Freelance designers for hire</li>
+          <li class="my-2">Tags</li>
+          <li class="my-2">Places</li>
+          <li class="my-2">Design assets</li>
+          <li class="my-2">Creative Market</li>
+          <li class="my-2">Fontspring</li>
+          <li class="my-2">Font Squirrel</li>
+        </ul>
+      </div>
+      <div class="col-md-3 col">
+        <ul class="list">
+          <li class="my-2">Design Resources</li>
+          <li class="my-2">Freelancing</li>
+          <li class="my-2">Design Hiring</li>
+          <li class="my-2">Design Portfolio</li>
+          <li class="my-2">Creative Process</li>
+          <li class="my-2">Design Industry Trends</li>
+        </ul>
+      </div>
+    </section>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./scripts.js"></script>
+</body>
+
+</html>

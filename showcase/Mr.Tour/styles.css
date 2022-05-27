@@ -1,0 +1,143 @@
+:root {
+    width: 100%;
+    height: 100%;
+    list-style-type: none;
+}
+.nav-header {
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+.slide-main h2{
+    font-weight: bolder;
+    font-size: 4rem;
+}
+.slide-main p {
+    font-size: 14px;
+}
+.call-icon {
+    padding: 15px;
+    text-align: center;
+    border-radius: 40px;
+    border: 5px solid rgb(243,130,95);
+    border-right-color: transparent;
+    box-shadow: 0 0 7px rgb(216, 216, 216);
+}
+.theme-icon {
+    width: 100px;
+    height: 100px;
+    padding: 0 ;
+    text-align: center;
+    border-radius: 100px;
+    border: 10px solid transparent;
+    border-right-color: rgb(243,130,95);
+    border-top-color: rgb(243,130,95);
+    box-shadow: 0 0 1px rgb(0, 0, 0);
+}
+.theme-icon p {
+    font-size: 10px;
+}
+.img-man {
+    width: 50px;
+    border: 0;
+    background-color: transparent;
+    border-radius: 100%;
+}
+.list {
+    list-style-type: none;
+    color: black;
+    text-decoration: none;
+}
+.list a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+    padding: 4px 0;
+    border-bottom: 2px solid transparent;
+}
+.list a:hover {
+    transition: 0.5s;
+  border-bottom: 2px solid rgb(243,130,95);
+}
+.Feedback{
+    position: relative;
+}
+.notfication {
+    position: absolute;
+    top: 1px;
+    right: 0px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: red;
+    border-radius: 100%;
+}
+.side-bar {
+    position: absolute;
+    top: 200px;
+    right: 80px;
+    color: black;
+    width: 200px;
+}
+.footer {
+    padding-top: 10px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background:linear-gradient(0deg , white ,rgb(243, 243, 243));
+}
+@media screen and (max-width:960px) {
+    .side-bar {
+        display: none;
+    }
+}
+  .info {
+      width: 200px;
+      background-color: white;
+      border: 0;
+      text-align: center;
+  }
+  .info a {
+    text-decoration: none;
+    list-style-type: none;
+    color: black;
+  }
+  .icon-bg {
+      background-color: rgb(243, 243, 243);
+      padding: 10px 0;
+      border-radius: 12px;
+  }
+  .info h6 {
+      font-size: 13px;
+      color: rgb(136, 136, 136);
+      font-weight: bold;
+  }
+  .info p {
+      font-size: 15px;
+      font-weight: bold;
+  }
+  .user {
+        border: 5px solid white;
+        transition: 0.5s;
+        margin: 0 -7px;
+        border-radius: 50px;
+  }
+  .user:hover {
+      margin: 0 5px;
+  }
+  .user-more {
+      cursor: pointer;
+      border: 0;
+      padding: 8px 3px;
+      background-color: rgb(1, 1, 80);
+      color: white;
+      font-size: 1rem;
+  }
+  .invis {
+      transition: 0.1s;
+      visibility: hidden;
+    }
+    .show-item {
+        transition: 0.1s;
+      visibility: hidden;
+    }
