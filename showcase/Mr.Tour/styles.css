@@ -90,6 +90,9 @@
     .side-bar {
         display: none;
     }
+    .slide-main h2 {
+        font-size: 3rem;
+    }
 }
   .info {
       width: 200px;
