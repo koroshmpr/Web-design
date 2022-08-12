@@ -61,6 +61,13 @@ body {
     box-shadow: 3px 5px 5px 0px black,
                 -3px -2px 5px white;
 }
+.pp {
+    top: 60px!important;
+    font-weight: bold;
+}
+.pp a:hover {
+    text-decoration: none
+}
 .wrapper .icon.dots {
     color: black;
     bottom: 20px;
