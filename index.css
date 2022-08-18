@@ -17,7 +17,7 @@ body {
 .wrapper , .wrapper .img-area, .social-icon a , .buttons button {
     transition: 0.2s;
     background : transparent;
-    box-shadow: -3px -3px 5px rgb(224, 224, 224),
+    box-shadow: inset 1px 1px 3px white,
                 3px 5px 5px #363636;
 }
 .wrapper {
@@ -58,8 +58,8 @@ body {
 .wrapper .icon.arrow {
     left: 15px;
     font-size: 23px;
-    box-shadow: 3px 5px 5px 0px black,
-                -3px -2px 5px white;
+    box-shadow: 2px 5px 3px black, 
+            inset 1px 1px 3px white;
 }
 .pp {
     top: 60px!important;
@@ -72,8 +72,8 @@ body {
     color: black;
     bottom: 20px;
     right: 30px;
-    box-shadow: 3px 7px 6px black,
-                -3px -2px 5px white;
+    box-shadow: 2px 5px 3px black, 
+            inset 1px 1px 3px white;
 }
 .wrapper .img-area {
     height: 150px;
@@ -140,7 +140,7 @@ body {
     bottom: 0;
     right: 0;
     border-radius: 50%;
-    box-shadow:  -3px -2px 3px rgb(253, 253, 253),
+    box-shadow:  inset 1px 1px 3px white,
                 3px 2px 3px #000000;
 } 
 .social-icons a:active::before {
