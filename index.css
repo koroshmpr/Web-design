@@ -310,8 +310,8 @@ button:hover {
     transform: scale(0.95);
     text-decoration: none;  
     font-size: 14.5px;
-    box-shadow: -2px -2px 1px rgb(224, 224, 224),
-                 3px 3px 2px #363636 !important;
+    box-shadow: inset 1px 1px 1px rgb(224, 224, 224),
+                 2px 2px 1px #363636 !important;
 }
 .cv:active {
     box-shadow: inset -2px -2px 2px rgb(214, 214, 214),
