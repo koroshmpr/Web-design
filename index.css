@@ -2,7 +2,7 @@ body {
     display: block;
     align-items: center;
     justify-content: center;
-    min-height: 100%;
+    min-height: 100vh;
     background: linear-gradient(0deg , #def4e4 , #f4f4bd , #f4d4bd , #b48b8b , #3e6787)!important;
 }
 .main{
