@@ -1,3 +1,18 @@
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: teal; 
+    border-radius: 5px;
+}
+
 body {
     display: block;
     align-items: center;
@@ -17,6 +32,9 @@ body {
 @media screen and (max-width:960px) {
     .main {
         min-height: 60%;
+    }
+    .inf {
+        width: 330px!important;
     }
     
 }
@@ -268,11 +286,17 @@ button:hover {
     transform: scale(0.93);
 
 } .inf {
-    font-weight: bold;
-    height: 140px;
+    padding: 20px 0 0 0 !important;
+    width: 400px;
+    height: 240px;
+    text-decoration: none;
     overflow: auto;
-    box-shadow: inset 0px -2px 5px rgb(214, 214, 214),
-                inset 0px 1px 5px #181818 !important;
+    box-shadow:inset 0px 3px 7px #444;
+    border: 0!important;
+    border-radius: 10px!important;
+}
+.inf ul {
+    list-style-type: square;
 }
 .social-icons a:active {
     transition: 0.2s;
