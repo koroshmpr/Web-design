@@ -329,7 +329,7 @@ button:hover {
 .site {
     text-align: center;
     
-    margin : 5px 5px;
+    margin : 5px 10px;
     transition: 0.5s !important;
     box-shadow:-2px -2px 3px rgb(224, 224, 224),
                 3px 3px 5px #363636,
@@ -337,9 +337,11 @@ button:hover {
 }
 @keyframes intorbtn {
     0%{
+        display: none;
         transform: translateY(180px);
     }
     100%{
+        display: inherit;
         transform: translateY(0);
     }
 }
