@@ -107,6 +107,7 @@ body {
 }
 .wrapper .social-icons {
     margin: 15px 0 25px 0;
+    text-align: center;
 }
 .social-icons a {
     transition: 2s!important;
@@ -115,8 +116,9 @@ body {
     position: relative;
     height: 45px;
     width: 45px;
-    margin: 0 5px;
     display: inline-flex;
+    justify-content: center;
+    align-items: center;
     text-decoration: none!important;
     border-radius: 50%;
 }
@@ -185,6 +187,12 @@ button:hover {
     height: 100%;
     line-height: 40px;
 }
+.social-icons a.phone  {
+    color: black;
+}
+.social-icons a.mail  {
+    color: #EA4335;
+}
 .social-icons a.fb i {
     color: #4267b2;
 }
@@ -230,7 +238,7 @@ button:hover {
 }
 .social-share .row i.icon-2{
     position: absolute;
-    left: 0;
+    left: 50%;
     top: 50%;
     color: #31344b;
     transform: translateY(-50%);
