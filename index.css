@@ -319,6 +319,7 @@ button:hover {
     display: flex;
     justify-content: center;
     justify-items: center;
+    animation : intorbtn ease-out 1s;
 }
 .site>a {
     color: white;
@@ -327,7 +328,7 @@ button:hover {
 }
 .site {
     text-align: center;
-    animation : intorbtn ease-out 1s;
+    
     margin : 5px 5px;
     transition: 0.5s !important;
     box-shadow:-2px -2px 3px rgb(224, 224, 224),
