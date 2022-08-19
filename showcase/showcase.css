@@ -3,6 +3,5 @@ body, html {
     background: linear-gradient(0deg , #def4e4 , #f4f4bd , #f4d4bd , #b48b8b , #3e6787)!important;
 }
 .card {
-    box-shadow: 1px 2px 5px 0px black,
-               inset -1px -1px 15px 0px rgb(153, 152, 152);
+    box-shadow: 0px 4px 9px #333, inset 0px -3px 6px #999;
 }

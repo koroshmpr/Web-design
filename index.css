@@ -28,6 +28,16 @@ body {
     justify-content: center;
     min-height: 65vh;
     margin: 20px 0px;
+    animation: intro ease-out 1s;
+}
+@keyframes intro {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+    
 }
 @media screen and (max-width:960px) {
     .main {
@@ -317,11 +327,20 @@ button:hover {
 }
 .site {
     text-align: center;
+    animation : intorbtn ease-out 1s;
     margin : 5px 5px;
     transition: 0.5s !important;
     box-shadow:-2px -2px 3px rgb(224, 224, 224),
                 3px 3px 5px #363636,
                 inset 2px 2px 5px white!important;
+}
+@keyframes intorbtn {
+    0%{
+        transform: translateY(180px);
+    }
+    100%{
+        transform: translateY(0);
+    }
 }
 .site:hover {
     transform: scale(1.1);
