@@ -92,6 +92,7 @@ body {
 .wrapper .icon.arrow {
     left: 15px;
     font-size: 23px;
+    animation: btn-intro 2s ease-out;
     box-shadow: 2px 5px 3px black, 
             inset 1px 1px 3px white;
 }
@@ -103,6 +104,7 @@ body {
     text-decoration: none
 }
 .wrapper .icon.dots {
+    animation: btn-intro 2.5s ease-out;
     color: black;
     bottom: 20px;
     right: 30px;
@@ -155,6 +157,16 @@ body {
     align-items: center;
     text-decoration: none!important;
     border-radius: 50%;
+    animation : social 1s ease-out;
+}
+@keyframes social {
+    0% {
+        transform:rotate(120deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+    
 }
 .buttons button:hover:before {
     content: "";
@@ -207,7 +219,12 @@ button:hover {
     border-radius: 25px;
     cursor: pointer;
     z-index: 4;
-
+    animation: btn-intro 1.5s ease-out;
+}
+@keyframes btn-intro {
+    0%{
+        box-shadow: none;
+    }
 }
 .buttons button:hover:before {
     z-index: -1;
