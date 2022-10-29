@@ -10,7 +10,7 @@
     <title>X O game</title>
 </head>
 
-<body>
+<body onload="findScore()">
     <audio id="xsound" src="./sound/mixkit-select-click-1109.wav"></audio>
     <audio id="osound" src="./sound/mixkit-click-error-1110.wav"></audio>
     <audio id="draw" src="./sound/mixkit-game-over-trombone-1940.wav"></audio>
@@ -20,6 +20,17 @@
             <span id="minutes">00</span>
             :
             <span id="seconds">00</span>
+        </div>
+    </div>
+    <div class="high__score">
+        <div class="d-flex">
+            <h3>O : </h3> 
+            <div id="scoreO"></div>
+
+        </div>
+        <div class="d-flex">
+            <h3>X : </h3> 
+            <div id="scoreX"></div>
         </div>
     </div>
     <main class="container mt-4 py-3 text-center">
