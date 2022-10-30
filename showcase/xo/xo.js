@@ -8,6 +8,7 @@ let box = $('.cell')
 let reld = document.getElementById('reld')
 let xWinScore = localStorage.getItem('xWins')
 let oWinScore = localStorage.getItem('oWins')
+let scoreCheck = false
 let base = 0
 function rd(e) {
     e.preventDefault()
@@ -33,6 +34,7 @@ highScoreX.innerText = 0
 localStorage.setItem("oWins", 0)
 localStorage.setItem("xWins", 0)
 location.reload()
+scoreCheck = true
 }
 
 
@@ -71,7 +73,15 @@ function winner() {
         result.innerText = 'X Win'
         $('.cell').attr("mode", "none")
         winsound.play()
-        localStorage.setItem("xWins", ++xWinScore)
+        if(scoreCheck) {
+            localStorage.setItem("xWins", 1)
+            highScoreX.innerText = 1
+        } else {
+            localStorage.setItem("xWins", ++xWinScore)
+            highScoreX.innerText = xWinScore
+            
+            
+        }
     }
   
     else if ($('#one').attr('condition') === 'checko' & $('#two').attr('condition') === 'checko' & $('#three').attr('condition') === 'checko' ||
@@ -86,7 +96,13 @@ function winner() {
         result.innerText = 'O Win'
         $('.cell').attr("mode", "none")
         winsound.play()
-        localStorage.setItem("oWins", ++oWinScore)
+        if (scoreCheck) {
+            localStorage.setItem("oWins", 1)
+            highScoreO.innerText = 1
+        } else {
+            localStorage.setItem("oWins", ++oWinScore)
+            highScoreO.innerText = oWinScore
+        }
     }
  
     else if ($('#one').attr('place') === 'used' &
