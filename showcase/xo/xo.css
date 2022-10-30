@@ -27,6 +27,20 @@ main {
     flex-wrap: wrap;
     box-shadow: 1px 1px 5px black,
                 -2px -2px 3px white;
+            }
+    
+    .intro {
+            animation: spinIntro 0.4s forwards cubic-bezier(0.42, 0, 0.4, 1.38);
+    }
+            @keyframes spinIntro {
+    0%{
+        opacity: 0;
+        transform: rotate(-90deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(0);
+    }
 }
 .side {
     text-align: center;

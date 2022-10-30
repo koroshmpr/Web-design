@@ -4,12 +4,20 @@ const winsound = document.getElementById('winsound')
 const draw = document.getElementById('draw')
 const highScoreO = document.getElementById('scoreO')
 const highScoreX = document.getElementById('scoreX')
+const board = document.getElementById("board")
 let box = $('.cell')
 let reld = document.getElementById('reld')
 let xWinScore = localStorage.getItem('xWins')
 let oWinScore = localStorage.getItem('oWins')
 let result = document.getElementById('result')
 var scoreCheck = 0
+
+window.onload = function () {
+    setInterval(function intro() {
+        board.classList.remove("intro") 
+    } , 1000)
+}
+
 function rd(e) {
     e.preventDefault()
     $('.cell').text( ' ')
@@ -19,6 +27,7 @@ function rd(e) {
     $('.cell').attr("place", " ")
     result.innerText = 'X turn ';
     scoreCheck = 0
+    board.classList.add("intro");
     findScore
     // location.reload()
 }
