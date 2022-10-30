@@ -96,7 +96,7 @@ position: absolute;
 @media screen and (max-width:960px) {
     .high__score {
         bottom: 5vh ;
-        left: 30vw;
+        left: 0;
         top:unset;
         text-align: center;
         width: 100vw;
