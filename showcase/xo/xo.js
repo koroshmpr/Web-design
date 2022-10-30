@@ -8,11 +8,17 @@ let box = $('.cell')
 let reld = document.getElementById('reld')
 let xWinScore = localStorage.getItem('xWins')
 let oWinScore = localStorage.getItem('oWins')
+let result = document.getElementById('result')
 let scoreCheck = false
-let base = 0
 function rd(e) {
     e.preventDefault()
-    location.reload()
+    $('.cell').text( ' ')
+    $('.cell').css('backgroundColor', 'white');
+    $('.cell').attr("Condition", "rdy")
+    $('.cell').attr("mode", "white")
+    $('.cell').attr("place", " ")
+    result.innerText = 'X turn ';
+    // location.reload()
 }
 function findScore () {
      if (!xWinScore) {
@@ -46,6 +52,11 @@ $('.cell').on("click", function () {
             $(this).attr("Condition", "checkx"),
             $(this).attr("place", "used")
         winner()
+        if ($('#result').attr("state", "owins")){
+        result.innerText = 'X win '
+    }else {
+        result.innerText = 'O turn '
+    }
         xsound.play()
     }
     else if ($(this).attr("mode") === "teal" & $(this).attr("Condition") !== "checkx" & $(this).attr("Condition") !== "checko") {
@@ -54,11 +65,17 @@ $('.cell').on("click", function () {
             this.innerText = 'O'
         $(this).attr("Condition", "checko")
         $(this).attr("place", "used")
+        if ($('#result').attr("state", "xwins")){
+            result.innerText = 'O win ';
+        }
+        else {
+            result.innerText = 'X turn ';
+        }
         winner()
         osound.play()
     }
 })
-let result = document.getElementById('result')
+
 function winner() {
     if ($('#one').attr('condition') === 'checkx' & $('#two').attr('condition') === 'checkx' & $('#three').attr('condition') === 'checkx' || 
         $('#one').attr('condition') === 'checkx' & $('#five').attr('condition') === 'checkx' & $('#nine').attr('condition') === 'checkx' || 
@@ -69,6 +86,7 @@ function winner() {
         $('#three').attr('condition') === 'checkx' & $('#five').attr('condition') === 'checkx' & $('#seven').attr('condition') === 'checkx'||
         $('#two').attr('condition') === 'checkx' & $('#five').attr('condition') === 'checkx' & $('#eight').attr('condition') === 'checkx'||
         $('#three').attr('condition') === 'checkx' & $('#six').attr('condition') === 'checkx' & $('#nine').attr('condition') === 'checkx')  {
+            $('#result').attr("state", "xwins")
         result.innerText = 'X Win'
         $('.cell').attr("mode", "none")
         winsound.play()
@@ -92,6 +110,7 @@ function winner() {
              $('#three').attr('condition') === 'checko' & $('#five').attr('condition') === 'checko' & $('#seven').attr('condition') === 'checko' ||
              $('#two').attr('condition') === 'checko' & $('#five').attr('condition') === 'checko' & $('#eight').attr('condition') === 'checko' ||
              $('#three').attr('condition') === 'checko' & $('#six').attr('condition') === 'checko' & $('#nine').attr('condition') === 'checko' ) {
+            $('#result').attr("state", "owins")
         result.innerText = 'O Win'
         $('.cell').attr("mode", "none")
         winsound.play()
@@ -114,35 +133,3 @@ function winner() {
         draw.play()
        }
 }
-var min = document.getElementById('minutes');
-var sec = document.getElementById('seconds');
-var minutes = 0;
-var seconds = 0;
-function startTimer() {
-    seconds++;
-
-    if (seconds < 9) {
-        sec.innerHTML = "0" + seconds;
-    }
-
-    if (seconds > 9) {
-        sec.innerHTML = seconds;
-    }
-
-    if (seconds > 59) {
-        minutes++;
-        min.innerHTML = "0" + minutes;
-        seconds = 0;
-    }
-
-    if (minutes > 9) {
-        min.innerHTML = minutes;
-    }
-
-}
-let Interval
-function start() {
-    clearInterval(Interval);
-    Interval = setInterval(startTimer, 999);
-}
-$('.cell').click(start)
