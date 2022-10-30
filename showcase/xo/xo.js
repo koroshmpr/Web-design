@@ -9,7 +9,7 @@ let reld = document.getElementById('reld')
 let xWinScore = localStorage.getItem('xWins')
 let oWinScore = localStorage.getItem('oWins')
 let result = document.getElementById('result')
-let scoreCheck = false
+var scoreCheck = 0
 function rd(e) {
     e.preventDefault()
     $('.cell').text( ' ')
@@ -18,6 +18,7 @@ function rd(e) {
     $('.cell').attr("mode", "white")
     $('.cell').attr("place", " ")
     result.innerText = 'X turn ';
+    scoreCheck = 0
     findScore
     // location.reload()
 }
@@ -41,7 +42,7 @@ highScoreX.innerText = 0
 localStorage.setItem("oWins", 0)
 localStorage.setItem("xWins", 0)
 $('#result').attr("state", " ")
-scoreCheck = true
+scoreCheck = 1
 xWinScore = 0
 oWinScore = 0
 }
@@ -84,13 +85,14 @@ function winner() {
             $('#result').text('X win')
         $('.cell').attr("mode", "none")
         winsound.play()
-        if(scoreCheck == true) {
+        if(scoreCheck === 1) {
             localStorage.setItem("xWins", 1)
             highScoreX.innerText = 1
-            scoreCheck = false
+            scoreCheck = 0
         } else {
             localStorage.setItem("xWins", ++xWinScore)
             highScoreX.innerText = xWinScore
+            scoreCheck = 0
             
         }
     }
@@ -107,14 +109,14 @@ function winner() {
             $('#result').text('O win')
         $('.cell').attr("mode", "none")
         winsound.play()
-        if (scoreCheck == true) {
+        if (scoreCheck === 1) {
             localStorage.setItem("oWins", 1)
             highScoreO.innerText = 1
-            scoreCheck = false
+            scoreCheck = 0
         } else {
             localStorage.setItem("oWins", ++oWinScore)
             highScoreO.innerText = oWinScore
-            
+            scoreCheck = 0
         }
     }
  
@@ -126,5 +128,6 @@ function winner() {
            result.innerText = 'Draw',
         $('.cell').attr("mode", "none"),
         draw.play()
+        scoreCheck = 0
        }
 }
