@@ -101,6 +101,7 @@ position: absolute;
         text-align: center;
         width: 100vw;
         margin: auto;
+        justify-content: space-evenly;
     }
 }
 #result {
