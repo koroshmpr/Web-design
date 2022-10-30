@@ -13,9 +13,9 @@ let result = document.getElementById('result')
 var scoreCheck = 0
 
 window.onload = function () {
-    setInterval(function intro() {
+    setTimeout(function intro() {
         board.classList.remove("intro") 
-    } , 1000)
+    } , 500)
 }
 
 function rd(e) {
@@ -27,7 +27,10 @@ function rd(e) {
     $('.cell').attr("place", " ")
     result.innerText = 'X turn ';
     scoreCheck = 0
-    board.classList.add("intro");
+    board.classList.add("intro") 
+    setTimeout(function intro() {
+        board.classList.remove("intro") 
+    } , 500)
     findScore
     // location.reload()
 }

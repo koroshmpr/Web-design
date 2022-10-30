@@ -2,6 +2,9 @@ body {
     background: teal;
 }
 main {
+    overflow: hidden;
+}
+main {
     background: linear-gradient(270deg ,rgb(110, 110, 110),black);
     height: 100%;
     border-radius: 30px;
@@ -25,6 +28,7 @@ main {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    overflow: hidden;
     box-shadow: 1px 1px 5px black,
                 -2px -2px 3px white;
             }
@@ -40,6 +44,20 @@ main {
     100%{
         opacity: 1;
         transform: rotate(0);
+    }
+}
+    .outro {
+            animation: spinOutro 0.4s forwards cubic-bezier(0.42, 0, 0.4, 1.38) ,
+            spinIntro 0.4s forwards cubic-bezier(0.42, 0, 0.4, 1.38);
+    }
+            @keyframes spinOutro {
+    0%{
+        opacity: 0;
+        transform: rotate(0deg);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(90);
     }
 }
 .side {
