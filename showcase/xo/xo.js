@@ -18,6 +18,7 @@ function rd(e) {
     $('.cell').attr("mode", "white")
     $('.cell').attr("place", " ")
     result.innerText = 'X turn ';
+    findScore
     // location.reload()
 }
 function findScore () {
@@ -41,6 +42,8 @@ localStorage.setItem("oWins", 0)
 localStorage.setItem("xWins", 0)
 $('#result').attr("state", " ")
 scoreCheck = true
+xWinScore = 0
+oWinScore = 0
 }
 
 
@@ -81,12 +84,14 @@ function winner() {
             $('#result').text('X win')
         $('.cell').attr("mode", "none")
         winsound.play()
-        if(scoreCheck) {
+        if(scoreCheck == true) {
             localStorage.setItem("xWins", 1)
             highScoreX.innerText = 1
+            scoreCheck = false
         } else {
             localStorage.setItem("xWins", ++xWinScore)
             highScoreX.innerText = xWinScore
+            
         }
     }
   
@@ -102,12 +107,14 @@ function winner() {
             $('#result').text('O win')
         $('.cell').attr("mode", "none")
         winsound.play()
-        if (scoreCheck) {
+        if (scoreCheck == true) {
             localStorage.setItem("oWins", 1)
             highScoreO.innerText = 1
+            scoreCheck = false
         } else {
             localStorage.setItem("oWins", ++oWinScore)
             highScoreO.innerText = oWinScore
+            
         }
     }
  
