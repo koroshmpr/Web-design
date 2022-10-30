@@ -15,6 +15,8 @@ var scoreCheck = 0
 window.onload = function () {
     setTimeout(function intro() {
         board.classList.remove("intro") 
+        result.classList.remove("pulse") 
+        
     } , 500)
 }
 
@@ -28,8 +30,10 @@ function rd(e) {
     result.innerText = 'X turn ';
     scoreCheck = 0
     board.classList.add("intro") 
+    result.classList.add("pulse") 
     setTimeout(function intro() {
         board.classList.remove("intro") 
+        result.classList.remove("pulse") 
     } , 500)
     findScore
     // location.reload()
@@ -68,7 +72,7 @@ $('.cell').on("click", function () {
             this.innerText = 'X'
             $(this).attr("Condition", "checkx"),
             $(this).attr("place", "used")
-            $('#result').text('O turn')
+            $('#result').text('O')
         winner()
         xsound.play()
     }
@@ -78,7 +82,7 @@ $('.cell').on("click", function () {
             this.innerText = 'O'
         $(this).attr("Condition", "checko")
         $(this).attr("place", "used")
-            $('#result').text('X turn')
+            $('#result').text('X')
         winner()
         osound.play()
     }
