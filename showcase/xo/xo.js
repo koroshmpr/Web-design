@@ -39,6 +39,7 @@ highScoreO.innerText = 0
 highScoreX.innerText = 0
 localStorage.setItem("oWins", 0)
 localStorage.setItem("xWins", 0)
+$('#result').attr("state", " ")
 scoreCheck = true
 }
 
@@ -47,16 +48,12 @@ reld.addEventListener('click', rd)
 $('.cell').on("click", function () {
     if ($(this).attr("mode") === "white" & $(this).attr("Condition") !== "checkx" & $(this).attr("Condition") !== "checko") {
         $(this).css('backgroundColor', 'teal'),
-            this.innerText = 'X'
         $('.cell').attr("mode", "teal"),
+            this.innerText = 'X'
             $(this).attr("Condition", "checkx"),
             $(this).attr("place", "used")
+            $('#result').text('O turn')
         winner()
-        if ($('#result').attr("state", "owins")){
-        result.innerText = 'X win '
-    }else {
-        result.innerText = 'O turn '
-    }
         xsound.play()
     }
     else if ($(this).attr("mode") === "teal" & $(this).attr("Condition") !== "checkx" & $(this).attr("Condition") !== "checko") {
@@ -65,12 +62,7 @@ $('.cell').on("click", function () {
             this.innerText = 'O'
         $(this).attr("Condition", "checko")
         $(this).attr("place", "used")
-        if ($('#result').attr("state", "xwins")){
-            result.innerText = 'O win ';
-        }
-        else {
-            result.innerText = 'X turn ';
-        }
+            $('#result').text('X turn')
         winner()
         osound.play()
     }
@@ -86,8 +78,7 @@ function winner() {
         $('#three').attr('condition') === 'checkx' & $('#five').attr('condition') === 'checkx' & $('#seven').attr('condition') === 'checkx'||
         $('#two').attr('condition') === 'checkx' & $('#five').attr('condition') === 'checkx' & $('#eight').attr('condition') === 'checkx'||
         $('#three').attr('condition') === 'checkx' & $('#six').attr('condition') === 'checkx' & $('#nine').attr('condition') === 'checkx')  {
-            $('#result').attr("state", "xwins")
-        result.innerText = 'X Win'
+            $('#result').text('X win')
         $('.cell').attr("mode", "none")
         winsound.play()
         if(scoreCheck) {
@@ -96,8 +87,6 @@ function winner() {
         } else {
             localStorage.setItem("xWins", ++xWinScore)
             highScoreX.innerText = xWinScore
-            
-            
         }
     }
   
@@ -110,8 +99,7 @@ function winner() {
              $('#three').attr('condition') === 'checko' & $('#five').attr('condition') === 'checko' & $('#seven').attr('condition') === 'checko' ||
              $('#two').attr('condition') === 'checko' & $('#five').attr('condition') === 'checko' & $('#eight').attr('condition') === 'checko' ||
              $('#three').attr('condition') === 'checko' & $('#six').attr('condition') === 'checko' & $('#nine').attr('condition') === 'checko' ) {
-            $('#result').attr("state", "owins")
-        result.innerText = 'O Win'
+            $('#result').text('O win')
         $('.cell').attr("mode", "none")
         winsound.play()
         if (scoreCheck) {
