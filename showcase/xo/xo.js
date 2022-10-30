@@ -8,6 +8,7 @@ let box = $('.cell')
 let reld = document.getElementById('reld')
 let xWinScore = localStorage.getItem('xWins')
 let oWinScore = localStorage.getItem('oWins')
+let base = 0
 function rd(e) {
     e.preventDefault()
     location.reload()
@@ -26,7 +27,13 @@ function findScore () {
          highScoreO.append(oWinScore)
      }
 }
+function reseter () {
+highScoreO.innerText = 0
+highScoreX.innerText = 0
+localStorage.setItem("oWins", 0)
+localStorage.setItem("oWins", 0)
 
+}
 
 
 reld.addEventListener('click', rd)

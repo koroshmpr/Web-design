@@ -38,6 +38,10 @@ main {
                 -3px -2px 4px white;
 }
 .high__score {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 20px;
 position: absolute; 
     top:10px ;
     left: 20vw;
