@@ -32,7 +32,7 @@ highScoreO.innerText = 0
 highScoreX.innerText = 0
 localStorage.setItem("oWins", 0)
 localStorage.setItem("xWins", 0)
-
+location.reload()
 }
 
 
