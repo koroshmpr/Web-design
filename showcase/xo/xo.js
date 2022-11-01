@@ -13,10 +13,11 @@ let result = document.getElementById('result')
 var scoreCheck = 0
 
 window.onload = function () {
+    highScoreO.append(oWinScore)
+    highScoreX.append(xWinScore)
     setTimeout(function intro() {
         board.classList.remove("intro") 
         result.classList.remove("pulse") 
-        
     } , 500)
 }
 
