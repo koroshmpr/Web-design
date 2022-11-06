@@ -5,11 +5,24 @@ main {
     overflow: hidden;
 }
 main {
+    position: relative;
     background: linear-gradient(270deg ,rgb(110, 110, 110),black);
     height: 100%;
     border-radius: 30px;
     box-shadow: 1px 1px 5px black,
                 -2px -2px 9px white;
+}
+.top__score-main article {
+    display: block;
+    gap: 10px;
+}
+article {
+    color: white;
+}
+.top__score-main {
+    position: absolute;
+    display: grid;
+    row-gap: 50px;
 }
 .pulse {
 animation: pulse 0.5s cubic-bezier(0.42, 0, 0.4, 1.38) forwards ;
@@ -100,6 +113,11 @@ animation: scaleFont 0.5s cubic-bezier(0.42, 0, 0.4, 1.38) forwards ;
     box-shadow: 1px 1px 5px black,
                 -3px -2px 4px white;
 }
+.xScore , .oScore {
+    padding:5px;
+    border-radius: 2px;
+    align-items: end;
+}
 .high__score {
     display: flex;
     align-items: start;
@@ -111,7 +129,7 @@ position: absolute;
     color: white;
 }
 #scoreX , #scoreO {
-    margin: auto 25px ;
+    margin: auto 0 auto 20px ;
     font-size: 1.5rem;
     opacity: 0;
     animation: intro 2s forwards ease-out;
@@ -131,6 +149,9 @@ position: absolute;
         width: 130px;
         height: 130px;
         font-size: 70px
+    }
+    .top__score-main{
+        display: inline
     }
 }
 @media screen and (min-width:420px) and  (max-width: 539px){
@@ -157,6 +178,16 @@ position: absolute;
 
 }
 @media screen and (max-width:960px) {
+    .top__score-main {
+        position: fixed;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+        align-items: center;
+        left: 0;
+        right: 0;
+        bottom: 50px;
+        align-items: center;
+    }
     .high__score {
         bottom: 1vh ;
         left: 0;
@@ -173,15 +204,25 @@ position: absolute;
     }
 }
 #result {
-    margin: auto;
     border-radius: 90px;
-    width: 150px;
-    padding: 32px 0;
-    background-color: red;
+    padding: 25px;
+    text-align: center;
+    max-width: 150px;
+    min-width: 100px;
     color: white;
-    font-size: 40px;
+    font-size: 30px;
     box-shadow: inset 2px 2px 5px white,
                 inset -2px -2px 5px black;
     text-align: center;
+}
+#reld {
+    border-radius: 30px;
+    width: 60px;
+    background-color: greenyellow;
+    transition: 0.5s;
+}
+#reld:hover {
+    background-color: rgb(138, 206, 37);
+    transform: scale(1.1);
 }
     

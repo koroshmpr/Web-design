@@ -74,6 +74,7 @@ $('.cell').on("click", function () {
             $(this).attr("Condition", "checkx"),
             $(this).attr("place", "used")
             $('#result').text('O')
+            $('#result').css('backgroundColor', 'crimson')
         winner()
         xsound.play()
     }
@@ -84,6 +85,7 @@ $('.cell').on("click", function () {
         $(this).attr("Condition", "checko")
         $(this).attr("place", "used")
             $('#result').text('X')
+            $('#result').css('backgroundColor', 'teal')
         winner()
         osound.play()
     }
@@ -100,6 +102,7 @@ function winner() {
         $('#two').attr('condition') === 'checkx' & $('#five').attr('condition') === 'checkx' & $('#eight').attr('condition') === 'checkx'||
         $('#three').attr('condition') === 'checkx' & $('#six').attr('condition') === 'checkx' & $('#nine').attr('condition') === 'checkx')  {
             $('#result').text('X win')
+            $('#result').css('backgroundColor', 'teal')
         $('.cell').attr("mode", "none")
         winsound.play()
         if(scoreCheck === 1) {
@@ -124,6 +127,7 @@ function winner() {
              $('#two').attr('condition') === 'checko' & $('#five').attr('condition') === 'checko' & $('#eight').attr('condition') === 'checko' ||
              $('#three').attr('condition') === 'checko' & $('#six').attr('condition') === 'checko' & $('#nine').attr('condition') === 'checko' ) {
             $('#result').text('O win')
+            $('#result').css('backgroundColor', 'crimson')
         $('.cell').attr("mode", "none")
         winsound.play()
         if (scoreCheck === 1) {
