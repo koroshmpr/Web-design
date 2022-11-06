@@ -154,6 +154,8 @@ function winner() {
        $('#eight').attr('place') === 'used' & $('#nine').attr('place') === 'used') {
            result.innerText = 'Draw',
         $('.cell').attr("mode", "none"),
+        $('body').css('backgroundColor', 'dimgray')
+        $('#result').css('backgroundColor', 'dimgray')
         draw.play()
         scoreCheck = 0
        }
