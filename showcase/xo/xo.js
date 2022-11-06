@@ -82,7 +82,7 @@ $('.cell').on("click", function () {
         xsound.play()
     }
     else if ($(this).attr("mode") === "teal" & $(this).attr("Condition") !== "checkx" & $(this).attr("Condition") !== "checko") {
-        $(this).css('backgroundColor', 'red'),
+        $(this).css('backgroundColor', 'crimson'),
             $('.cell').attr("mode", "white"),
             this.innerText = 'O'
         $(this).attr("Condition", "checko")

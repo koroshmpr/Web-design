@@ -150,6 +150,7 @@ position: absolute;
         height: 130px;
         font-size: 70px
     }
+  
     .top__score-main{
         display: inline
     }
@@ -178,6 +179,9 @@ position: absolute;
 
 }
 @media screen and (max-width:960px) {
+    main {
+        min-height: 90vh;
+    }
     .top__score-main {
         position: fixed;
         grid-template-columns: auto auto auto;
@@ -185,7 +189,7 @@ position: absolute;
         align-items: center;
         left: 0;
         right: 0;
-        bottom: 50px;
+        bottom: 10%;
         align-items: center;
     }
     .high__score {
