@@ -28,6 +28,8 @@ function rd(e) {
     $('.cell').attr("Condition", "rdy")
     $('.cell').attr("mode", "white")
     $('.cell').attr("place", " ")
+    $('body').css('backgroundColor', 'teal')
+    $('#result').css('backgroundColor', 'teal')
     result.innerText = 'X turn ';
     scoreCheck = 0
     board.classList.add("intro") 
@@ -75,6 +77,7 @@ $('.cell').on("click", function () {
             $(this).attr("place", "used")
             $('#result').text('O')
             $('#result').css('backgroundColor', 'crimson')
+            $('body').css('backgroundColor', 'crimson')
         winner()
         xsound.play()
     }
@@ -86,6 +89,7 @@ $('.cell').on("click", function () {
         $(this).attr("place", "used")
             $('#result').text('X')
             $('#result').css('backgroundColor', 'teal')
+            $('body').css('backgroundColor', 'teal')
         winner()
         osound.play()
     }
@@ -103,6 +107,7 @@ function winner() {
         $('#three').attr('condition') === 'checkx' & $('#six').attr('condition') === 'checkx' & $('#nine').attr('condition') === 'checkx')  {
             $('#result').text('X win')
             $('#result').css('backgroundColor', 'teal')
+            $('body').css('backgroundColor', 'teal')
         $('.cell').attr("mode", "none")
         winsound.play()
         if(scoreCheck === 1) {
@@ -128,6 +133,7 @@ function winner() {
              $('#three').attr('condition') === 'checko' & $('#six').attr('condition') === 'checko' & $('#nine').attr('condition') === 'checko' ) {
             $('#result').text('O win')
             $('#result').css('backgroundColor', 'crimson')
+            $('body').css('backgroundColor', 'crimson')
         $('.cell').attr("mode", "none")
         winsound.play()
         if (scoreCheck === 1) {

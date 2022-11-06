@@ -225,4 +225,10 @@ position: absolute;
     background-color: rgb(138, 206, 37);
     transform: scale(1.1);
 }
+#reld svg {
+    transition: 0.5s;
+}
+#reld:hover svg {
+    transform: rotate(1turn);
+}
     
